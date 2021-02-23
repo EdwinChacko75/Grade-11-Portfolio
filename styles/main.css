@@ -1,0 +1,41 @@
+body {
+    background-repeat: no-repeat,repeat; 
+    background-color: #DDEDF4;
+    background-size: cover;
+}
+p {
+    font-size: larger;
+    background-color: #1181B2;
+    padding: 30px;
+    font-family: 'Newsreader', serif;
+}
+button {
+    color: #212221;
+    background-color: #DDEDF4;
+    border: 0ch;
+}
+p1 {
+    color: #212221;
+    font-size: 50px;
+    font-family:  'Source Sans Pro', sans-serif;
+}
+h1 {font-size: 30px;
+    color: #DDEDF4;
+    background-color: #212221;
+    padding: 8px;
+    width: 200px;
+}
+ol {
+    color: #212221;
+}
+figcaption {
+    color: #212221;
+    background-color: #DDEDF4; 
+    padding: 5px;
+    width: 195px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
