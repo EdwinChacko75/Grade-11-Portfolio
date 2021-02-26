@@ -10,6 +10,20 @@ p {
     font-family: 'Newsreader', serif;
     text-align: center;
 }
+ul {
+}
+li {
+    list-style-type: none;
+    float: left;
+    padding: 0em 3em 0em 3em;
+}
+li a {
+    text-decoration: none;
+    color: #212221;
+}
+li a:hover {
+    color: #DDEDF4;
+}
 button {
     color: #212221;
     background-color: #DDEDF4;
