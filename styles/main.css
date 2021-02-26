@@ -10,18 +10,18 @@ p {
     font-family: 'Newsreader', serif;
     text-align: center;
 }
-ul {
+#nav ul {
 }
 li {
     list-style-type: none;
     float: left;
     padding: 0em 3em 0em 3em;
 }
-li a {
+#nav li a {
     text-decoration: none;
     color: #212221;
 }
-li a:hover {
+#nav li a:hover {
     color: #DDEDF4;
 }
 button {
