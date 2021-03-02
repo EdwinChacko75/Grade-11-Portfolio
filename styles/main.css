@@ -10,8 +10,8 @@ p {
     font-family: 'Newsreader', serif;
     text-align: center;
 }
-#nav ul {
-}
+/* #nav ul {
+} */
 li {
     list-style-type: none;
     float: left;
