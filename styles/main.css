@@ -1,49 +1,58 @@
+head {
+    margin: 0% 0% 0% 0%;
+}
 body {
+    margin: 0px 0px 0px 0px;
     background-repeat: no-repeat,repeat; 
-    background-color: #DDEDF4;
+    background-image: url(../images/galaxy-background.jpg) ;
     background-size: cover;
 }
-p {
+.nav ul {
+    list-style-type: none; 
     font-size: larger;
     background-color: #1181B2;
-    padding: 30px;
     font-family: 'Newsreader', serif;
     text-align: center;
+    overflow: hidden;
 }
-/* #nav ul {
-} */
-li {
-    list-style-type: none;
+.nav li {
     float: left;
-    padding: 0em 3em 0em 3em;
+    text-align: center;
 }
-#nav li a {
+.nav li a {
+    display: block;
+    color: #000000;
+    padding: 30px 50px 30px 50px;
     text-decoration: none;
-    color: #212221;
 }
-#nav li a:hover {
+.nav li a:hover {
     color: #DDEDF4;
+    background-color: #212221;
 }
-button {
-    color: #212221;
-    background-color: #DDEDF4;
-    border: 0ch;
+.nav a.active {
+    color: #DDEDF4;
+    background-color: #212221;
 }
 p1 {
+    text-align: center;
     color: #212221;
     font-size: 50px;
     font-family:  'Source Sans Pro', sans-serif;
+    background-color: #DDEDF4; 
+    padding: 10px;   
+    border-color: #212221; 
+    margin: 5px;
 }
-h1 {font-size: 30px;
+h1 {
+    text-align: center;
+}
+h1 span {
+    font-size: 30px;
     color: #DDEDF4;
     background-color: #212221;
     padding: 8px;
     width: 200px;
     font-family: 'Newsreader', serif;
-    text-align: center;
-}
-ol {
-    color: #212221;
 }
 figcaption {
     color: #212221;
