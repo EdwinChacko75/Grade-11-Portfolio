@@ -8,19 +8,19 @@ function lights(){
     let color = prompt("What color is the light now?");
 
     if (color === "red") {
-        console.log("STOP!");
+        alert("STOP!");
     }
     else if (color === "green")
-        console.log("GO!");
+        alert("GO!");
 
     else if (color === "yellow") {
-        console.log("Stop if it is safe to do so");
+        alert("Stop if it is safe to do so");
     }
     else if (color === "amber") {
-        console.log("Stop if it is safe to do so")
+        alert("Stop if it is safe to do so")
     }
     else {
-        console.log("Invalid Input")
+        alert("Invalid Input")
     }
 }
 
