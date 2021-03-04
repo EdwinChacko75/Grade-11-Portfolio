@@ -3,9 +3,11 @@ head {
 }
 body {
     margin: 0px 0px 0px 0px;
-    background-repeat: no-repeat,repeat; 
+    background-color: #DDEDF4;
+    height: 100%;
+    /* background-repeat: no-repeat,repeat; 
     background-image: url(../images/galaxy-background.jpg) ;
-    background-size: cover;
+    background-size: cover; */
 }
 .nav ul {
     list-style-type: none; 
@@ -33,15 +35,15 @@ body {
     color: #DDEDF4;
     background-color: #212221;
 }
-p1 {
+.container {
+    position: relative;
     text-align: center;
-    color: #212221;
-    font-size: 50px;
-    font-family:  'Source Sans Pro', sans-serif;
-    background-color: #DDEDF4; 
-    padding: 10px;   
-    border-color: #212221; 
-    margin: 5px;
+}
+.page-header {
+    position: absolute;
+    left: 42%;
+    right: 40%;
+    z-index: 1;
 }
 h1 {
     text-align: center;
@@ -54,14 +56,38 @@ h1 span {
     width: 200px;
     font-family: 'Newsreader', serif;
 }
+#background {
+    width: 100%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.centered {
+    color: #212221;
+    font-size: 40px;
+    font-family:  'Source Sans Pro', sans-serif;
+    background-color: #DDEDF4; 
+    padding: 10px;   
+    border-color: #212221; 
+    margin: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: ;
+    border-radius: 25px;
+    border-color: #1181B2;
+    border-style: solid;
+    border-width: 5px;
+}
+
 figcaption {
     color: #212221;
     background-color: #DDEDF4; 
     padding: 5px;
     width: 195px;
 }
-.center {
+/* .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    }
+    } */
