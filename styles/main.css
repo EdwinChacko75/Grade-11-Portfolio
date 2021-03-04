@@ -1,11 +1,14 @@
+/* Header Formatting */
 head {
     margin: 0% 0% 0% 0%;
 }
+/* Body Formatting */
 body {
     margin: 0px 0px 0px 0px;
     background-color: #DDEDF4;
     height: 100%;
 }
+/* Navigation Bar */
 .nav ul {
     list-style-type: none; 
     font-size: larger;
@@ -32,14 +35,7 @@ body {
     color: #DDEDF4;
     background-color: #212221;
 }
-
-#home-page-header {
-    position: absolute;
-    margin-top: 2%;
-    left: 42%;
-    right: 40%;
-    z-index: 1;
-}
+/* Page Header Visuals */
 h1 {
     text-align: center;
 }
@@ -51,9 +47,17 @@ h1 span {
     width: 200px;
     font-family: 'Newsreader', serif;
 }
+/* Home Page Container */
 #welcome-container {
     position: relative;
     text-align: center;
+}
+#home-page-header {
+    position: absolute;
+    margin-top: 2%;
+    left: 42%;
+    right: 40%;
+    z-index: 1;
 }
 #galaxy-background {
     width: 100%;
@@ -72,7 +76,6 @@ h1 span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transform: ;
     border-radius: 25px;
     border-color: #1181B2;
     border-style: solid;
@@ -83,4 +86,58 @@ figcaption {
     background-color: #DDEDF4; 
     padding: 5px;
     width: 195px;
+}
+/* Chess Puzzle Button */
+#puzzle-answer { 
+    position: absolute; 
+    top: 355%; 
+    left: 70%; 
+    font-size: 20px; 
+    padding: 15px; 
+    border: solid;
+    border-color: #212221;
+    border-width: 2px;
+} 
+#puzzle-answer::before { 
+    content: "Answer"; 
+    position: absolute; 
+    top: 0%; 
+    left: 0%; 
+    width: 100%; 
+    height: 100%; 
+    background: #44449B; 
+    transition: 0.5s ease-in-out; 
+} 
+#puzzle-answer:hover::before { 
+    left: 103%; 
+} 
+/* Projects Page */
+.projects-container {
+    position: relative;
+    text-align: center;
+}
+#projects-page-header {
+    position: absolute;
+    margin-top: 2%;
+    left: 42%;
+    right: 40%;
+    z-index: 1;
+}
+#sunset-background {
+    width: 100%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    z-index: -1;
+}
+#projects-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:  'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    color: #DDEDF4;
+    padding: 30px;
+    background: rgb(33, 34, 33);
+    background: rgba(33, 34, 33, 0.65)
 }
