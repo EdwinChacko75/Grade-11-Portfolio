@@ -16,6 +16,7 @@ body {
     font-family: 'Newsreader', serif;
     text-align: center;
     overflow: hidden;
+    margin: 0%;
 }
 .nav li {
     float: left;
@@ -131,7 +132,7 @@ figcaption {
 }
 #projects-text {
     position: absolute;
-    top: 35%;
+    top: 34%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family:  'Source Sans Pro', sans-serif;
