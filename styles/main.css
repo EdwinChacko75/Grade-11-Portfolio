@@ -11,13 +11,13 @@ body {
 /* Navigation Bar */
 .nav ul {
     list-style-type: none; 
-    font-size: larger;
+    font-size: 20px;
     background-color: #1181B2;
     font-family: 'Newsreader', serif;
     text-align: center;
     overflow: hidden;
     margin: 0% 0% 0% 0%;
-    font-weight: bold;
+    
 }
 .nav li {
     float: left;
@@ -26,7 +26,7 @@ body {
 .nav li a {
     display: block;
     color: #000000;
-    padding: 40px 50px 40px 50px;
+    padding: 35px 60px 35px 60px;
     text-decoration: none;
 }
 .nav li a:hover {
@@ -42,12 +42,14 @@ h1 {
     text-align: center;
 }
 h1 span {
-    font-size: 30px;
+    font-size: 40px;
     color: #DDEDF4;
     background-color: #212221;
-    padding: 8px;
+    padding: 15px;
     width: 200px;
     font-family: 'Newsreader', serif;
+    font-weight: normal;
+    border-style: solid;
 }
 /* Home Page Container */
 #welcome-container {
@@ -56,7 +58,7 @@ h1 span {
 }
 #home-page-header {
     position: absolute;
-    margin-top: 2%;
+    margin-top: 4%;
     left: 42%;
     right: 40%;
     z-index: 1;
@@ -67,28 +69,60 @@ h1 span {
     transform: scaleX(-1);
 }
 #welcome-content {
-    color: #212221;
+    color: #DDEDF4;
     font-size: 40px;
-    font-family:  'Source Sans Pro', sans-serif;
-    background-color: #DDEDF4; 
-    padding: 10px;   
-    border-color: #212221; 
+    font-family: 'Source Sans Pro', sans-serif;
+    background: rgb(33, 34, 33);
+    background: rgba(33, 34, 33, 0.8);
+    padding: 10px;    
     margin: 5px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 25px;
-    border-color: #1181B2;
+    border-color: #44449B;
     border-style: solid;
-    border-width: 5px;
+    border-width: 2px;
 }
-figcaption {
+/* Home Page Section 2 */
+#site-introduction {
+    position: relative;
+    margin: 5% 8% 20% 7%;
+}
+#site-introduction-header {
+    text-align: center;
+    font-size: 25px;
     color: #212221;
-    background-color: #DDEDF4; 
-    padding: 5px;
-    width: 195px;
+    text-decoration: underline #1181B2;
 }
+#site-introduction-text {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: absolute;
+    bottom: 17%;
+    left: 56%;
+    font-size: 25px;
+    line-height: 1.5;
+    padding: 15px;
+    background-color: #1181B2;
+    color: #212221;
+    border-radius: 30px;
+}
+#code-image {
+    width: 600px;
+    height: auto;
+    border-style: solid;
+    border-color: #1181B2;
+    border-width: 0.5em;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
 /* Chess Puzzle Button */
 #puzzle-answer { 
     position: absolute; 
