@@ -325,3 +325,40 @@ h1 span {
     background: rgb(221, 237, 244);
     background: rgba(221, 237, 244, 0.65);
 }
+#intrests {
+    position: relative;
+    margin: 5% 8% 7% 7%;
+}
+#intrests-header {
+    text-align: center;
+    color: #DDEDF4;
+    font-size: 25px;
+    font-family: 'Newsreader', serif;
+    text-decoration: underline #DDEDF4;    
+}
+#intrests-content {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 55%;
+    margin-right: 5%;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #DDEDF4;
+    padding: 15px;
+    border: #DDEDF4;
+    border-style: solid;
+    border-width: 5px;
+    background: rgb(221, 237, 244);
+    background: rgba(221, 237, 244, 0.3);
+}
+#albert-einstien {
+    width: 400px;
+    height: auto;
+    margin-left: 5%;
+    border: #DDEDF4;
+    border-style: solid;
+    border-width: 0.5em;
+    border-radius: 1000px;
+
+}
