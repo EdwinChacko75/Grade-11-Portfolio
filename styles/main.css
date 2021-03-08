@@ -387,12 +387,12 @@ h1 span {
 #sports-content {
     position: absolute;
     top: 140%;
-    right: 45%;
+    right: 50%;
     text-align: center;
     color: #44449B;
     background: #DDEDF4;
     padding: 25px;
-    font-size: 25px;
+    font-size: 23px;
     font-family: 'Source Sans Pro', sans-serif;
     margin-bottom: 10%;
     border-radius: 20px;
@@ -450,11 +450,11 @@ h1 span {
     padding: 25px;
 }
 #pawn-promotion-image {
-    width: 700px;
+    width: 620px;
     height: auto;
     position:absolute;
-    top: 300%;
-    left: 25%;
+    top: 340%;
+    left: 24%;
     right: 27%;
     border: #1181B2;
     border-style: solid;
@@ -463,7 +463,7 @@ h1 span {
         /* Chess Puzzle */
 #chess-puzzle {
     position: relative;
-    margin: 0% 8% 5% 7%;
+    margin: 7% 8% 5% 7%;
 }
 #puzzle-context {
     text-align: left;
@@ -472,13 +472,13 @@ h1 span {
     color: #DDEDF4;
     background-color: #44449B;
     padding: 15px;
-    margin: 3% 25% 7% 10%;
+    margin: 3% 25% 4% 10%;
     border: solid;
     border-color: #DDEDF4;
     border-width: 2px;
 }
 #chess-puzzle-image {
-    width: 700px;
+    width: 600px;
     height: auto;
     margin-left: 3%;
     position: relative;
@@ -494,7 +494,7 @@ h1 span {
     position: absolute; 
     background-color: #212221;
     color: #DDEDF4;
-    top: 57%; 
+    top: 56%; 
     left: 73%; 
     font-size: 20px; 
     padding: 15px; 
@@ -537,20 +537,20 @@ h1 span {
     text-align: center;
     position: absolute;
     top: 145%;
-    left: 45%;
-    right: 5%;
+    left: 50%;
+    right: 2%;
     border-radius: 20px;
-    font-size: 25px;
+    font-size: 21px;
     font-family: 'Source Sans Pro', sans-serif;
     padding: 25px;
     color: #212221;
     background: #DDEDF4;
 }
 #middle-child-video {
-    width: 580px;
+    width: 530px;
     height: auto;
     position: absolute;
-    top: 202%;
+    top: 188%;
     left: 0%;
     border: #DDEDF4;
     border-style: solid;
@@ -561,7 +561,7 @@ h1 span {
     text-decoration: none;
     color: #DDEDF4;
     position: absolute;
-    bottom: -410%;
+    bottom: -367%;
     left: 1%;
     padding: 5px 10px 5px 10px;
 }
@@ -584,10 +584,10 @@ h1 span {
 #past-content {
     position: absolute;
     text-align: center;
-    top: 19%;
+    top: 21%;
     left: 53%;
     margin-right: 2%;
-    font-size: 25px;
+    font-size: 21px;
     font-family: 'Source Sans Pro', sans-serif;
     color: #DDEDF4;
     padding: 15px;
@@ -599,14 +599,157 @@ h1 span {
 }
 #gauss-award {
     margin-top: 5%;
-    width: 650px;
+    width: 540px;
     height: auto;
 }
 #gauss-caption {
-    margin: 1% 68% 0% 1%;
+    margin: 0% 68% 0% 1%;
     padding: 5px 10px 5px 10px;
     border: solid #44449B 3px;
     color: #44449B;
     background: #DDEDF4;
+    font-size: 17.5px;
+}
+    /* Section 3 Header */
+#future-header {
+    text-align: center;
+    color: #DDEDF4;
+    font-size: 25px;
+    font-family: 'Newsreader', serif;
+    text-decoration: underline #DDEDF4;
+}
+        /* Section 3.0 - Career */
+#career {
+    position: relative;
+    margin: 10% 8% 5% 7%;
+}
+#career-header {
+    font-size: 25px;
+    font-family: 'Newsreader', serif;
+    color: #DDEDF4;
+    background-color: #1181B2;
+    padding: 1px 60px 1px 60px;
+    width: fit-content;
+    margin-left: 7.1%;
+    border-radius: 20px;
+    margin-bottom: 1%;
+}
+#career-content {
+    text-align: center;
+    margin: 5% 20% 2% 15%;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 25px;
+    color: #DDEDF4;
+    background: #1181B2;
+}
+        /* Fun Fact */
+#fact {
+    position: relative; 
+    margin: 1% 8% 5% 7%;
+}
+#fact-header {
+    font-size: 25px;
+    font-family: 'Newsreader', serif;
+    color: #DDEDF4;
+    background-color: #1181B2;
+    padding: 1px 30px 1px 30px;
+    width: fit-content;
+    margin-left: 41%;
+    border-radius: 20px;
+    margin-bottom: 6%;
+    border: #DDEDF4;
+    border-style: solid;
+    border-width: 5px;
+    
+}
+#fact-content {
+    background-color: #DDEDF4;
+    border: #1181B2 solid 5px;
+    color: #212221;
+    font-size: 23px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: absolute;
+    top: 56%;
+    left: 60%;
+    right: 10%;
+}
+#flight-sergant-badge {
+    width: 400px;
+    height: auto;
+    margin-left: 7%;
+    border: #1181B2;
+    border-style: solid;
+    border-width: 0.5em;
+}
+        /* Section 3.1 - Other */
+#other-container {
+    position: relative;
+    text-align: center;
+}
+#stock-background {
+    position: relative;
+    width: 100%;
+}
+#other-header {
+    position: absolute;
+    margin-top: 10%;
+    left: 40%;
+    right: 40%;
+    z-index: 1;
+    color: #212221;
+    background-color: #DDEDF4;
+    font-size: 25px;
+    font-family: 'Newsreader', serif;
+}
+#other-content {
+    position: absolute;
+    text-align: center;
+    top: 37%;
+    left: 22%;
+    right: 22%;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #DDEDF4;
+    padding: 15px;
+    border: #DDEDF4;
+    border-style: solid;
+    border-width: 5px;
+    background: rgb(33, 34, 33);
+    background: rgba(33,34,33, 0.7);
+}
+    /* Back To Top Button */
+#footer {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    background-color: #1181B2;
+    text-align: center;
+}
+#button-context {
+    color: #212221;
+    font-size: 35px;
+    font-family: 'Newsreader', serif;
+    margin-bottom: 2%;
+    border:#212221 solid 3px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 15px;
+    background-color: #DDEDF4;
+}
+#top-button {
+    color: #DDEDF4;
+    background-color: #212221;
+    padding: 15px;
+    border: #DDEDF4 solid 2px;
     font-size: 20px;
+    font-family: 'Newsreader', serif;
+}
+#top-button:hover {
+    color: #212221;
+    background-color: #DDEDF4;
+    border: #212221 solid 3px;
+    cursor:pointer;
 }
