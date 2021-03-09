@@ -9,6 +9,15 @@ body {
     height: 100%;
 }
 /* Navigation Bar */
+    /* Logo */
+.nav #logo {
+    width: auto;
+    height: 96px;
+    overflow: hidden;
+    margin-top: -6px;
+    margin-bottom: -6px;
+}
+    /* File Paths */
 .nav ul {
     list-style-type: none; 
     font-size: 20px;
@@ -36,14 +45,7 @@ body {
     color: #DDEDF4;
     background-color: #212221;
 }
-/* Logo */
-.nav #logo {
-    width: auto;
-    height: 96px;
-    overflow: hidden;
-    margin-top: -6px;
-    margin-bottom: -6px;
-}
+
 /* Page Header Visuals */
 h1 {
     text-align: center;
@@ -155,149 +157,6 @@ h1 span {
 	50% {
 		left: 125%;
 	}
-}
-
-/* Projects Page */
-#projects-container {
-    position: relative;
-    text-align: center;
-}
-#projects-page-header {
-    position: absolute;
-    margin-top: 4%;
-    left: 41%;
-    right: 40%;
-    z-index: 1;
-}
-#sunset-background {
-    width: 100%;
-    transform: scaleX(-1);
-    z-index: -2;
-}
-#projects-content {
-    position: absolute;
-    top: 34%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family:  'Source Sans Pro', sans-serif;
-    font-size: 50px;
-    color: #DDEDF4;
-    padding: 30px;
-    background: rgb(33, 34, 33);
-    background: rgba(33, 34, 33, 0.65);
-}
-/* Tech Experience Section 1 */
-#tech-exp-container {
-    position: relative;
-    text-align: center;
-    margin: 0%;
-}
-#tech-exp-header {
-    position: absolute;
-    margin-top: 4%;
-    left: 39.25%;
-    right: 38%;
-    z-index: 1;
-}
-#stars-background {
-    position: relative;
-    width: 100%;
-}
-#skills {
-    color: #44449B;    
-    background: rgb(221, 237, 244);
-    background: rgba(221, 237, 244, 0.7);
-    font-size: 18px;
-    font-family: 'Newsreader', serif;
-    text-decoration: underline;
-    position: absolute;
-    width: 260px;
-    z-index: 1;
-    top: 19%;
-    left: 42%;
-    right: 43%;
-    border-color: #44449B;
-    border-style: solid;
-    border-width: 2px;
-}
-#skills-content {
-    color: #44449B;
-    font-size: 25px;
-    font-family: 'Source Sans Pro', sans-serif;
-    background: rgb(221, 237, 244);
-    background: rgba(221, 237, 244, 0.65);
-    padding: 10px;    
-    margin: 5px;
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-color: #44449B;
-    border-style: solid;
-    border-width: 2px;
-}
-    /* Fundraising Project Link */
-#fundraiser-link {
-    font-size: 20px;
-    font-family: 'Newsreader', serif;
-    text-decoration: none;
-    position: absolute;
-    bottom: 20%;
-    left: 35%;
-    right: inherit;    
-    color: #DDEDF4;
-    background-color: #44449B;
-    padding: 15px;
-    border-color: #212221;
-    border-style: solid;
-    border-width: 1px;
-}
-#fundraiser-link:hover {
-    color: #44449B;
-    background-color: #DDEDF4;
-    border-color: #44449B;
-    border-style: solid;
-    border-width: 1px;
-}
-/* Tech Experience Section 2 */
-#experience {
-    position: relative;
-    margin: 5% 8% 7% 7%;
-}
-#experience-header {
-    text-align: center;
-    margin-top: 5%;
-    color: #DDEDF4;
-    font-size: 25px;
-    font-family: 'Newsreader', serif;
-    text-decoration: underline #44449B;
-    text-decoration-thickness: 5px;
-}
-#anonymous-hacker {
-    width: 400px;
-    height: auto;
-    position: relative;
-    left: 3%;
-    border-style: solid;
-    border-color: #44449B;
-    border-width: 0.5em;
-    border-radius: 1000px;
-}
-#experience-content {
-    text-align: center;
-    position: absolute;
-    top: 27%;
-    left: 50%;
-    margin-right: 5%;
-    padding: 15px;
-    color: #DDEDF4;
-    font-size: 25px;
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #44449B;
-    border-style: solid;
-    border-color: #1181B2;
-    border-width: 5px;
-    border-radius: 10px;
 }
 /* About Me Section 1 */
 #about-me-container {
@@ -754,3 +613,145 @@ h1 span {
     border: #212221 solid 3px;
     cursor:pointer;
 }
+/* Projects Page */
+#projects-container {
+    position: relative;
+    text-align: center;
+}
+#projects-page-header {
+    position: absolute;
+    margin-top: 4%;
+    left: 41%;
+    right: 40%;
+    z-index: 1;
+}
+#sunset-background {
+    width: 100%;
+    transform: scaleX(-1);
+    z-index: -2;
+}
+#projects-content {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:  'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    color: #DDEDF4;
+    padding: 30px;
+    background: rgb(33, 34, 33);
+    background: rgba(33, 34, 33, 0.65);
+}
+/* Tech Experience Section 1 */
+#tech-exp-container {
+    position: relative;
+    text-align: center;
+    margin: 0%;
+}
+#tech-exp-header {
+    position: absolute;
+    margin-top: 4%;
+    left: 39.25%;
+    right: 38%;
+    z-index: 1;
+}
+#stars-background {
+    position: relative;
+    width: 100%;
+}
+#skills {
+    color: #44449B;    
+    background: rgb(221, 237, 244);
+    background: rgba(221, 237, 244, 0.7);
+    font-size: 18px;
+    font-family: 'Newsreader', serif;
+    text-decoration: underline;
+    position: absolute;
+    width: 260px;
+    z-index: 1;
+    top: 19%;
+    left: 42%;
+    right: 43%;
+    border-color: #44449B;
+    border-style: solid;
+    border-width: 2px;
+}
+#skills-content {
+    color: #44449B;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: rgb(221, 237, 244);
+    background: rgba(221, 237, 244, 0.65);
+    padding: 10px;    
+    margin: 5px;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-color: #44449B;
+    border-style: solid;
+    border-width: 2px;
+}
+    /* Fundraising Project Link */
+#fundraiser-link {
+    font-size: 20px;
+    font-family: 'Newsreader', serif;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+    right: inherit;    
+    color: #DDEDF4;
+    background-color: #44449B;
+    padding: 15px;
+    border-color: #212221;
+    border-style: solid;
+    border-width: 1px;
+}
+#fundraiser-link:hover {
+    color: #44449B;
+    background-color: #DDEDF4;
+    border-color: #44449B;
+    border-style: solid;
+    border-width: 1px;
+}
+/* Tech Experience Section 2 */
+#experience {
+    position: relative;
+    margin: 5% 8% 7% 7%;
+}
+#experience-header {
+    text-align: center;
+    margin-top: 5%;
+    color: #DDEDF4;
+    font-size: 25px;
+    font-family: 'Newsreader', serif;
+    text-decoration: underline #44449B 5px;
+}
+#anonymous-hacker {
+    width: 400px;
+    height: auto;
+    position: relative;
+    left: 3%;
+    border-style: solid;
+    border-color: #44449B;
+    border-width: 0.5em;
+    border-radius: 1000px;
+}
+#experience-content {
+    text-align: center;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    margin-right: 5%;
+    padding: 15px;
+    color: #DDEDF4;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #44449B;
+    border-style: solid;
+    border-color: #1181B2;
+    border-width: 5px;
+    border-radius: 10px;
+}
+/* The End!! */
