@@ -642,6 +642,50 @@ h1 span {
     background: rgb(33, 34, 33);
     background: rgba(33, 34, 33, 0.65);
 }
+/* Button Assignment */
+#button-assignment {
+    padding: 8% 5% 10% 5%;
+    background-color: #1181B2;
+    text-align: center;
+}
+    /* Button Assignment Header */
+#button-header {
+    font-size: 20px;
+    font-family: 'Newsreader', serif;
+    padding: 1%;
+    background-color: #44449B;
+    color: #DDEDF4;
+    border: #DDEDF4 solid 3px;
+    margin: 0% 33% 4% 33%;
+}
+.buttons {
+    font-size: 23px;
+    font-family: 'Newsreader', serif;
+    padding: 2% 4% 2% 4%;
+    color: #DDEDF4;
+    background-color: #212221;
+    border: #DDEDF4 solid 3px;
+    margin: 4% 5% 4% 5%;
+}
+    /* Button Hover Properties */
+.buttons:hover {
+    color: #212221;
+    background: #DDEDF4;
+    border: #212221 solid 3px;
+    transition: 300ms;
+}
+    /* Button Active Properties */
+.buttons.active.focus, .buttons.active, 
+.buttons.focus, .buttons:active.focus, 
+.buttons:active:focus, .buttons:focus, 
+.buttons.active:focus {
+    outline: none;
+    box-shadow: none;
+    color: #DDEDF4;
+    background-color: #44449B;
+    border: #DDEDF4 solid 3px;
+    transition: 650ms;
+}
 /* Tech Experience Section 1 */
 #tech-exp-container {
     position: relative;
