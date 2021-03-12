@@ -2,11 +2,10 @@
 function vault() {
   alert("Looks like you've stubmbled into my vault where I store my most classified projects...");
 }
+
 // About Me Button To Top
 mybutton = document.getElementById("top-button");
-
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
@@ -14,9 +13,11 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+
 function topFunction() {
   document.documentElement.scrollTop = 0
 }
+
 //Projects Buttons Assignemnt
   //Button 1
 function project1(){
@@ -42,18 +43,22 @@ function project4(){
 function project5(){
   alert("Stay Tuned For Project 5!");
 }
+
   // Button 6
 function project6(){
   alert("Touching Up Project 6");
 }
+
   // Button 7
 function project7(){
   alert("Project 7 Is Coming Along Great");
 }
+
   // Button 8
 function project8(){
   alert("Adding Semi-colons To Project 8");
 }
+
   // Button 9
 function project9(){
   alert("Project 9 Will Blow You Away");
