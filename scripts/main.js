@@ -19,16 +19,31 @@ function topFunction() {
 }
 
 //Projects Buttons Assignemnt
-  //Button 1
-function project1(){
-  alert("Project 1 Is Coming Soon");
+  //Greater Integer Of 2 
+function largerNumber(){
+  let num1 = parseInt(prompt('Pick a number, any number:'));
+  let num2 = parseInt(prompt('Pick another number, any number:'));
+  if(num1 > num2) {
+    alert(`The number ${num1} is greater than ${num2}!`);
+  } else if(num2 > num1) {
+    alert (`The number ${num2} is greater than ${num1}!`);
+  } else {
+    alert(`Since ${num1} and ${num2} are the same, neither is greater!`);
+  }
 }
-
-  //Button 2
-function project2(){
-  alert("Project 2 Is Under Development");
+  //Sign Of The Product Of 3 Integers
+function signOfProduct(){
+  let num1 = parseInt(prompt('What positive or negative integer comes to mind when I say Thursday?'));
+  let num2 = parseInt(prompt('...How about Friday?'));
+  let num3 = parseInt(prompt('...What about negative Tuesday?'));
+  let product = num1 * num2 * num3;
+  if(product === 0){
+    alert('You really had to go and mess eveything up by putting 0. . .')
+  }  else {
+    let sign = product > 0 ? '+' : '-';
+    alert(`The sign of ${product} is: ${sign}.`);    
+  }
 }
-
   //Button 3
 function project3(){
   alert("Debugging Project 3");
