@@ -49,33 +49,49 @@ const threeNumberSort = () =>{
   let num1 = parseInt(prompt('What is your favourite number?'));
   let num2 = parseInt(prompt('...least favourite?'));
   let num3 = parseInt(prompt('...second favourite?'));
-  let threeNumbers = [num1, num2, num3];
-  switch(threeNumbers) {
-    case num1 > num2 && num2 > num3:
-      alert(`I've taken the liberty to numerically order your numbers: ${num1}, ${num2}, ${num3}.`);
-      break;
-    case num1 > num2 && num2 === num3:
-      alert(`I've taken the liberty to numerically order your numbers but ${num2} and ${num3} are equal: ${num1}, ${num2}, ${num3}.`);
-      break;
-    case num1 > num2 && num2 < num3 && num1 > num3:
-      alert(`I've taken the liberty to numerically order your numbers: ${num1}, ${num3}, ${num2}.`);
-      break;
-    case num1 < num2 && num2 > num3 && num1 > num3:
-      alert(`I've taken the liberty to numerically order your numbers: ${num2}, ${num1}, ${num3}.`);
-      break;
-    case num1 < num2 && num2 === num3:
-      alert(`I've taken the liberty to numerically order your numbers but ${num2} and ${num3} are equal: ${num2}, ${num3}, ${num1}.`);
-      break;
-    case num1 < num2 && num2 < num3:
-        alert(`I've taken the liberty to numerically order your numbers: ${num3}, ${num3}, ${num1}.`);
-        break;
-    case num1 === num2 && num2 === num3:
-        alert(`${num1}, ${num2}, and ${num3} are equivalent so the order is: ${num1}, ${num2}, ${num3}`);
-        break;
-    default:
-      alert('You should really learn what NUMBERS are!!')
-      break;
-  }
+  ((num1 > num2 && num2 > num3) 
+    ? alert(`I've taken the liberty to numerically order your numbers: ${num3}, ${num2}, ${num1}.`)
+    : (num1 > num2 && num2 === num3) 
+    ? alert(`I've taken the liberty to numerically order your numbers but ${num2} and ${num3} are equal: ${num2}, ${num3}, ${num1}.`)
+    : (num1 > num2 && num2 < num3 && num1 > num3) 
+    ? alert(`I've taken the liberty to numerically order your numbers: ${num2}, ${num3}, ${num1}.`)
+    : (num1 < num2 && num2 > num3 && num1 > num3)
+    ? alert(`I've taken the liberty to numerically order your numbers: ${num3}, ${num1}, ${num2}.`)
+    : (num1 < num2 && num2 === num3)
+    ? alert(`I've taken the liberty to numerically order your numbers but ${num2} and ${num3} are equal: ${num1}, ${num2}, ${num3}.`)
+    : (num1 === num2 && num2 === num3)
+    ? alert(`${num1}, ${num2}, and ${num3} are equivalent so the order is: ${num1}, ${num2}, ${num3}`)
+    : (num1 < num2 && num2 < num3)
+    ? alert(`I've taken the liberty to numerically order your numbers: ${num1}, ${num2}, ${num3}.`)
+    :(num1 === num2 && num2 === num3)
+    ? alert(`${num1}, ${num2}, and ${num3} are equivalent so the order is: ${num1}, ${num2}, ${num3}`)
+    : alert('You should really learn what NUMBERS are!!')
+  );
+
+
+
+
+
+
+  // let threeNumbers = [num1, num2, num3]; 
+  // switch(threeNumbers) {
+  //  
+  //   case num1 < num2 && num2 > num3 && num1 > num3:
+  //     alert(`I've taken the liberty to numerically order your numbers: ${num2}, ${num1}, ${num3}.`);
+  //     break;
+  //   case num1 < num2 && num2 === num3:
+  //     alert(`I've taken the liberty to numerically order your numbers but ${num2} and ${num3} are equal: ${num2}, ${num3}, ${num1}.`);
+  //     break;
+  //   case num1 < num2 && num2 < num3:
+  //       alert(`I've taken the liberty to numerically order your numbers: ${num3}, ${num3}, ${num1}.`);
+  //       break;
+  //   case :
+  //       ;
+  //       break;
+  //   default:
+  //     alert('You should really learn what NUMBERS are!!')
+  //     break;
+  // }
 }
 
   //Button 4
