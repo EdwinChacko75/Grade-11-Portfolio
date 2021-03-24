@@ -657,7 +657,7 @@ h1 span {
 #vault-portal button a {
     display: block;
     color: #DDEDF4;
-    font-size: 25px;
+    font-size: 1.6625vw;
     font-family: 'Newsreader', serif;
     padding: 30px 60px 30px 60px;
     text-decoration: none;
@@ -673,14 +673,16 @@ h1 span {
 }
 /* Vault Page */
 /* Button Assignment */
-#button-assignment {
-    padding: 4% 5% 1% 5%;
+.vault {
     background-color: #44449B;
+}
+#button-assignment {
+    padding: 3% 5% 1% 5%;
     text-align: center;
 }
     /* Button Assignment Header */
 #button-header {
-    font-size: 20px;
+    font-size: 1.33vw;
     font-family: 'Newsreader', serif;
     padding: 0.5% 0% 0.5% 0% ;
     background-color: #1181B2;
@@ -689,12 +691,14 @@ h1 span {
     margin: 0% 32.5% 4% 32.5%;
 }
 .buttons {
-    font-size: 23px;
+    font-size: 1.5295vw;
     font-family: 'Newsreader', serif;
     padding: 2% 5% 2% 5%;
     color: #DDEDF4;
     background-color: #212221;
-    border: #DDEDF4 solid 3px;
+    border: #DDEDF4 solid 0.1995vw;
+    width: 20vw;
+    height: 5.8vw; 
     margin: 4% 5% 4% 5%;
 }
     /* Button Hover Properties */
@@ -703,6 +707,18 @@ h1 span {
     background: #DDEDF4;
     border: #212221 solid 3px;
     transition: 300ms;
+    cursor: pointer;
+}
+#answer-box {
+    color: #212221;
+    background: #DDEDF4;
+    border: #212221 solid 3px;
+    height: fit-content;
+}
+#answer-box:hover {
+    color: #DDEDF4;
+    background-color: #212221;
+    border: #DDEDF4 solid 0.1995vw;
 }
     /* Button Active Properties */
 .buttons.active.focus, .buttons.active, 

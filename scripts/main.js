@@ -1,125 +1,203 @@
 //Vault Entry Message
 const vault = () =>{
+  
   alert("Looks like you've stubmbled into my vault where I store my most classified projects...");
+
 }
 
 // About Me Button To Top
 mybutton = document.getElementById("top-button");
 window.onscroll = function() {scrollFunction()};
+
 function scrollFunction() {
+
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
   }
+
 }
+
 const topFunction = () =>{
+
   document.documentElement.scrollTop = 0
+
 }
 
 //Projects Buttons Assignemnt
   //Greater Integer Of 2 
 const largerNumber = () => {
+  
   let num1 = parseInt(prompt('Pick a number, any number:'));
   let num2 = parseInt(prompt('Pick another number, any number:'));
-  if(Number.isNaN(num1) || Number.isNaN(num2)) {
-    alert('BOTH inputs have to be numbers, try again.');
-  } else if(num1 === num2) {
-    alert(`Since ${num1} and ${num2} are the same, neither is greater!`);
-  } else {
-    let greaterNum = num1 > num2 ? num1 : num2;
-    let lesserNum = num1 < num2 ? num1 : num2;
-    alert(`The number ${greaterNum} is the greater than ${lesserNum}!`)
-  }
+  
+  ((Number.isNaN(num1) || Number.isNaN(num2))
+    ? output = 'BOTH inputs have to be numbers, try again.'
+    : (num1 === num2)
+    ? output = `Since ${num1} and ${num2} are the same, neither is greater!`
+    : (num1 > num2)
+    ? output = `The number ${num1} is the greater than ${num2}!`
+    : output = `The number ${num2} is the greater than ${num1}!`
+  )
+
+  document.getElementById("answer-box").innerHTML = output;
+
 }
   //Sign Of The Product Of 3 Integers
 const signOfProduct = () =>{
+  
   let num1 = parseInt(prompt('What positive or negative integer comes to mind when I say Thursday?'));
   let num2 = parseInt(prompt('...How about Friday?'));
   let num3 = parseInt(prompt('...What about negative Tuesday?'));
+  
   let product = num1 * num2 * num3;
-  if(product === 0){
-    alert('You really had to go and mess eveything up by putting 0. . .')
-  } else if(Number.isNaN(product)) {
-    alert('You again, NUMBERS please!')    
-  } else {
-    let sign = product > 0 ? '+' : '-';
-    alert(`The sign of ${product} is: "${sign}".`);       
-  }
+  
+  ((product === 0)
+    ? output = 'You really had to go and mess eveything up by putting 0. . .'
+    : (Number.isNaN(product))
+    ? output = 'You again, NUMBERS please!'
+    : (product > 0) 
+    ? output = `The sign of ${product} is: "+".`
+    : output = `The sign of ${product} is: "-".`
+  )
+  
+  document.getElementById("answer-box").innerHTML = output;
+
 }
   //Sorting 3 Numbers In Numerical Order
 const threeNumberSort = () =>{
+  
   let num1 = parseInt(prompt('What is your favourite number?'));
   let num2 = parseInt(prompt('...least favourite?'));
   let num3 = parseInt(prompt('...second favourite?'));
+  
   ((num1 > num2 && num2 > num3) 
-    ? alert(`I've taken the liberty to numerically order your numbers: ${num3}, ${num2}, ${num1}.`)
-    : (num1 > num2 && num2 === num3) 
-    ? alert(`I've taken the liberty to numerically order your numbers but ${num2} and ${num3} are equal: ${num2}, ${num3}, ${num1}.`)
+    ? output = `I've taken the liberty to numerically order your numbers: ${num3}, ${num2}, ${num1}.`
     : (num1 > num2 && num2 < num3 && num1 > num3) 
-    ? alert(`I've taken the liberty to numerically order your numbers: ${num2}, ${num3}, ${num1}.`)
+    ? output = `I've taken the liberty to numerically order your numbers: ${num2}, ${num3}, ${num1}.`
     : (num1 < num2 && num2 > num3 && num1 > num3)
-    ? alert(`I've taken the liberty to numerically order your numbers: ${num3}, ${num1}, ${num2}.`)
-    : (num1 < num2 && num2 === num3)
-    ? alert(`I've taken the liberty to numerically order your numbers but ${num2} and ${num3} are equal: ${num1}, ${num2}, ${num3}.`)
-    : (num1 === num2 && num2 === num3)
-    ? alert(`${num1}, ${num2}, and ${num3} are equivalent so the order is: ${num1}, ${num2}, ${num3}`)
+    ? output = `I've taken the liberty to numerically order your numbers: ${num3}, ${num1}, ${num2}.`
+    : (num1 > num2 && num2 < num3 && num1 > num3)
+    ? output = `I've taken the liberty to numerically order your numbers: ${num1}, ${num3}, ${num2}.`
+    : (num1 < num2 && num2 > num3 && num1 < num3)
+    ? output = `I've taken the liberty to numerically order your numbers: ${num1}, ${num3}, ${num2}.`
+    : (num1 > num2 && num2 < num3 && num1 < num3)
+    ? output = `I've taken the liberty to numerically order your numbers: ${num2}, ${num1}, ${num3}.`  
     : (num1 < num2 && num2 < num3)
-    ? alert(`I've taken the liberty to numerically order your numbers: ${num1}, ${num2}, ${num3}.`)
-    :(num1 === num2 && num2 === num3)
-    ? alert(`${num1}, ${num2}, and ${num3} are equivalent so the order is: ${num1}, ${num2}, ${num3}`)
-    : alert('You should really learn what NUMBERS are!!')
+    ? output = `I've taken the liberty to numerically order your numbers: ${num1}, ${num2}, ${num3}.`
+    : (num1 > num2 && num2 === num3) 
+    ? output = `I've taken the liberty to numerically order your numbers but ${num2} and ${num3} are equal: ${num2}, ${num3}, ${num1}.`
+    : (num1 < num2 && num2 === num3)
+    ? output = `I've taken the liberty to numerically order your numbers but ${num2} and ${num3} are equal: ${num1}, ${num2}, ${num3}.`
+    : (num1 === num2 && num2 > num3)
+    ? output = `I've taken the liberty to numerically order your numbers but ${num1} and ${num2} are equal: ${num3}, ${num2}, ${num1}.`
+    : (num1 === num2 && num2 < num3)
+    ? output = `I've taken the liberty to numerically order your numbers but ${num1} and ${num2} are equal: ${num1}, ${num2}, ${num3}.`
+    : (num1 > num2 && num1 === num3)
+    ? output = `I've taken the liberty to numerically order your numbers but ${num1} and ${num3} are equal: ${num2}, ${num1}, ${num3}.`
+    : (num1 < num2 && num1 === num3)
+    ? output = `I've taken the liberty to numerically order your numbers but ${num1} and ${num3} are equal: ${num1}, ${num3}, ${num2}.`
+    : (num1 === num2 && num2 === num3)
+    ? output = `${num1}, ${num2}, and ${num3} are equivalent so the order is: ${num1}, ${num2}, ${num3}`
+    : output = 'You should really learn what NUMBERS are!!'
   );
 
+  document.getElementById("answer-box").innerHTML = output;
 
-
-
-
-
-  // let threeNumbers = [num1, num2, num3]; 
-  // switch(threeNumbers) {
-  //  
-  //   case num1 < num2 && num2 > num3 && num1 > num3:
-  //     alert(`I've taken the liberty to numerically order your numbers: ${num2}, ${num1}, ${num3}.`);
-  //     break;
-  //   case num1 < num2 && num2 === num3:
-  //     alert(`I've taken the liberty to numerically order your numbers but ${num2} and ${num3} are equal: ${num2}, ${num3}, ${num1}.`);
-  //     break;
-  //   case num1 < num2 && num2 < num3:
-  //       alert(`I've taken the liberty to numerically order your numbers: ${num3}, ${num3}, ${num1}.`);
-  //       break;
-  //   case :
-  //       ;
-  //       break;
-  //   default:
-  //     alert('You should really learn what NUMBERS are!!')
-  //     break;
-  // }
 }
 
-  //Button 4
-const project4 = () =>{
-  alert("Project 4 Is Almost Done");
+  // Multiples of 3 up to 1000 via a for loop
+const forSumThrees = () => {
+  
+  let answer = 0;
+  
+  for(let i = 0; i < 1000; i = i + 3){ 
+    answer += i;
+  }
+
+  document.getElementById("answer-box").innerHTML = `The sum of the multiples of 3 under 1000 is: ${answer}!`;
+
 }
 
- // Button 5
-const project5 = () =>{
-  alert("Stay Tuned For Project 5!");
+ // Multiples of 3 up to 1000 via a while loop
+const whileSumThrees = () =>{
+  
+  let answer = 0;
+  let i = 0;
+  
+  while(i < 1000) {
+    answer = answer + i;
+    i += 3;
+  }
+  
+  document.getElementById("answer-box").innerHTML = `The sum of the multiples of 3 under 1000 is: ${answer}!`;
+
 }
 
-  // Button 6
-const project6 = () =>{
-  alert("Touching Up Project 6");
+  // Identifying multiples of 4, 10, and both from numbers 1 to 100.
+const tenFour = () =>{
+  
+  let answer = '';
+  
+  for(let i = 1; i <= 100; i++) {
+    
+    ((i % 4 === 0 && i % 10 === 0)
+      ? answer += ('TenFour!')
+      : (i % 4 === 0)
+      ? answer += ('Four')
+      : (i % 10 === 0)
+      ? answer += ('Ten')
+      : answer += (` ${i} `)
+    );
+
+  }
+
+  document.getElementById("answer-box").innerHTML = answer;
+
 }
 
-  // Button 7
-const project7 = () =>{
-  alert("Project 7 Is Coming Along Great");
+  // Determining century for any given year
+const centuryFromYear = () =>{
+  
+  let year = parseInt(prompt('If you could travel to any year, what year would you go to?'));
+  let century = Math.floor((year-1)/100) + 1;
+  let lastDig = century % 10;
+  
+  ((century === 0 || century < 0) 
+  ? output = `Time travel is cool and all, but what even is the year ${year}?`
+  : (Number.isNaN(century))
+  ? window.open("https://www.youtube.com/watch?v=ZJEIKkPXirg&ab_channel=KidsAcademy")
+  : (lastDig === 1)
+  ? output = `${year} is in the ${century}st century!`
+  : (lastDig === 2)
+  ? output = `${year} is in the ${century}nd century!`
+  : (lastDig === 3)
+  ? output = `${year} is in the ${century}rd century!`
+  : output = `${year} is in the ${century}th century!`
+  )
+
+  document.getElementById("answer-box").innerHTML = output;
+
 }
 
-  // Button 8
-const project8 = () =>{
-  alert("Adding Semi-colons To Project 8");
+  // Third angle of a triangle function
+const thirdAngle = () =>{
+
+  let angle1 = parseInt(prompt('Give me one angle of a triangle.'));
+  let angle2 = parseInt(prompt('Give me another angle of the same triangle.'));
+  let angle3 = 180 - angle1 - angle2;
+
+  ((angle1 < 0 || angle2 < 0) 
+  ? output = 'Angles of a triangle cannot be negative integers.'
+  : (Number.isNaN(angle3))
+  ? window.open("https://en.wikipedia.org/wiki/Number")
+  : output = `The third angle of your triangle is ${angle3}°!`
+  )
+
+  document.getElementById("answer-box").innerHTML = output;
 }
 
-  // Button 9
-const project9 = () =>{
-  alert("Project 9 Will Blow You Away");
-}
+  // Reset answer box to display 'Answer Box'
+const resetAnswerBox = () => {
+
+  document.getElementById("answer-box").innerHTML = 'Answer Box';
+
+} 
