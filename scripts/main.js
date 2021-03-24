@@ -25,6 +25,10 @@ const topFunction = () =>{
 //Projects Buttons Assignemnt
   //Greater Integer Of 2 
 const largerNumber = () => {
+  /* 
+  Prompts user for 2 inputs and outputs which number is greater than 
+  the other to 'Answer Box'.
+  */
   
   let num1 = parseInt(prompt('Pick a number, any number:'));
   let num2 = parseInt(prompt('Pick another number, any number:'));
@@ -43,7 +47,10 @@ const largerNumber = () => {
 }
   //Sign Of The Product Of 3 Integers
 const signOfProduct = () =>{
-  
+  /* 
+  Prompts user for 3 inputs and outputs the sign(+, -) of the product to 'Answer Box'.
+  */
+
   let num1 = parseInt(prompt('What positive or negative integer comes to mind when I say Thursday?'));
   let num2 = parseInt(prompt('...How about Friday?'));
   let num3 = parseInt(prompt('...What about negative Tuesday?'));
@@ -64,7 +71,10 @@ const signOfProduct = () =>{
 }
   //Sorting 3 Numbers In Numerical Order
 const threeNumberSort = () =>{
-  
+  /* 
+  Prompts user for 3 inputs and outputs them to 'Answer Box' in numerical order. 
+  */
+
   let num1 = parseInt(prompt('What is your favourite number?'));
   let num2 = parseInt(prompt('...least favourite?'));
   let num3 = parseInt(prompt('...second favourite?'));
@@ -106,10 +116,14 @@ const threeNumberSort = () =>{
 
   // Multiples of 3 up to 1000 via a for loop
 const forSumThrees = () => {
-  
+  /* 
+  For loop that goes through numbers 1 to 1000 and sums the mutilples of three. 
+  Outputs the value to 'Answer Box'.
+  */
+
   let answer = 0;
   
-  for(let i = 0; i < 1000; i = i + 3){ 
+  for(let i = 0; i < 1000; i += 3){ 
     answer += i;
   }
 
@@ -119,7 +133,11 @@ const forSumThrees = () => {
 
  // Multiples of 3 up to 1000 via a while loop
 const whileSumThrees = () =>{
-  
+  /* 
+  While loop that goes through numbers 1 to 1000 and sums the mutilples of three. 
+  Outputs the value to 'Answer Box'.
+  */
+
   let answer = 0;
   let i = 0;
   
@@ -134,6 +152,10 @@ const whileSumThrees = () =>{
 
   // Identifying multiples of 4, 10, and both from numbers 1 to 100.
 const tenFour = () =>{
+  /* 
+  Counts from numbers 1 to 100 and logs multiples of 4 as 'Four', multiples of 10 as 
+  'Ten', and multiples of both as 'TenFour!'. Output is logged to the console.
+  */
   
   let answer = '';
   
@@ -149,13 +171,15 @@ const tenFour = () =>{
     );
 
   }
-
-  document.getElementById("answer-box").innerHTML = answer;
+  
+  console.log(answer);
+  document.getElementById("answer-box").innerHTML = 'Check Out The Console';
 
 }
 
   // Determining century for any given year
 const centuryFromYear = () =>{
+  /* Prompts user for a year greater than 1 and optputs the century of that year. */
   
   let year = parseInt(prompt('If you could travel to any year, what year would you go to?'));
   let century = Math.floor((year-1)/100) + 1;
@@ -164,7 +188,7 @@ const centuryFromYear = () =>{
   ((century === 0 || century < 0) 
   ? output = `Time travel is cool and all, but what even is the year ${year}?`
   : (Number.isNaN(century))
-  ? window.open("https://www.youtube.com/watch?v=ZJEIKkPXirg&ab_channel=KidsAcademy")
+  ? open("https://www.youtube.com/watch?v=ZJEIKkPXirg&ab_channel=KidsAcademy")
   : (lastDig === 1)
   ? output = `${year} is in the ${century}st century!`
   : (lastDig === 2)
@@ -178,8 +202,9 @@ const centuryFromYear = () =>{
 
 }
 
-  // Third angle of a triangle function
+// Third angle of a triangle function
 const thirdAngle = () =>{
+  /* Prompts user for 2 angles of a triangle, calculates and outputs the third angle. */
 
   let angle1 = parseInt(prompt('Give me one angle of a triangle.'));
   let angle2 = parseInt(prompt('Give me another angle of the same triangle.'));
@@ -190,14 +215,14 @@ const thirdAngle = () =>{
   : (angle1 === 0 || angle2 === 0 || angle3 === 0)
   ? output = 'ANGLES OF A TRIANGLE please and thank you!'
   : (Number.isNaN(angle3))
-  ? window.open("https://en.wikipedia.org/wiki/Number")
+  ? open("https://en.wikipedia.org/wiki/Number")
   : output = `The third angle of your triangle is ${angle3}°!`
   )
 
   document.getElementById("answer-box").innerHTML = output;
 }
 
-  // Reset answer box to display 'Answer Box'
+// Reset answer box to display 'Answer Box'
 const resetAnswerBox = () => {
 
   document.getElementById("answer-box").innerHTML = 'Answer Box';
