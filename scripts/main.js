@@ -170,8 +170,8 @@ const centuryFromYear = () =>{
   : (lastDig === 2)
   ? output = `${year} is in the ${century}nd century!`
   : (lastDig === 3)
-  ? output = `${year} is in the ${century}rd century!`
-  : output = `${year} is in the ${century}th century!`
+  ? output = `The year ${year} is in the ${century}rd century!`
+  : output = `The year ${year} is in the ${century}th century!`
   )
 
   document.getElementById("answer-box").innerHTML = output;
@@ -185,8 +185,10 @@ const thirdAngle = () =>{
   let angle2 = parseInt(prompt('Give me another angle of the same triangle.'));
   let angle3 = 180 - angle1 - angle2;
 
-  ((angle1 < 0 || angle2 < 0) 
+  ((angle1 < 0 || angle2 < 0 || angle3 < 0) 
   ? output = 'Angles of a triangle cannot be negative integers.'
+  : (angle1 === 0 || angle2 === 0 || angle3 === 0)
+  ? output = 'ANGLES OF A TRIANGLE please and thank you!'
   : (Number.isNaN(angle3))
   ? window.open("https://en.wikipedia.org/wiki/Number")
   : output = `The third angle of your triangle is ${angle3}°!`
