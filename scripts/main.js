@@ -34,8 +34,8 @@ const largerNumber = () => {
     : (num1 === num2)
     ? output = `Since ${num1} and ${num2} are the same, neither is greater!`
     : (num1 > num2)
-    ? output = `The number ${num1} is the greater than ${num2}!`
-    : output = `The number ${num2} is the greater than ${num1}!`
+    ? output = `The number ${num1} is greater than ${num2}!`
+    : output = `The number ${num2} is greater than ${num1}!`
   )
 
   document.getElementById("answer-box").innerHTML = output;
