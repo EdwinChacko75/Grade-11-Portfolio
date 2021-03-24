@@ -23,7 +23,7 @@ const topFunction = () =>{
 }
 
 //Projects Buttons Assignemnt
-  //Greater Integer Of 2 
+//Greater Integer Of 2 
 const largerNumber = () => {
   /* 
   Prompts user for 2 inputs and outputs which number is greater than 
@@ -45,7 +45,7 @@ const largerNumber = () => {
   document.getElementById("answer-box").innerHTML = output;
 
 }
-  //Sign Of The Product Of 3 Integers
+//Sign Of The Product Of 3 Integers
 const signOfProduct = () =>{
   /* 
   Prompts user for 3 inputs and outputs the sign(+, -) of the product to 'Answer Box'.
@@ -69,7 +69,7 @@ const signOfProduct = () =>{
   document.getElementById("answer-box").innerHTML = output;
 
 }
-  //Sorting 3 Numbers In Numerical Order
+//Sorting 3 Numbers In Numerical Order
 const threeNumberSort = () =>{
   /* 
   Prompts user for 3 inputs and outputs them to 'Answer Box' in numerical order. 
@@ -114,7 +114,7 @@ const threeNumberSort = () =>{
 
 }
 
-  // Multiples of 3 up to 1000 via a for loop
+// Multiples of 3 up to 1000 via a for loop
 const forSumThrees = () => {
   /* 
   For loop that goes through numbers 1 to 1000 and sums the mutilples of three. 
@@ -131,7 +131,7 @@ const forSumThrees = () => {
 
 }
 
- // Multiples of 3 up to 1000 via a while loop
+// Multiples of 3 up to 1000 via a while loop
 const whileSumThrees = () =>{
   /* 
   While loop that goes through numbers 1 to 1000 and sums the mutilples of three. 
@@ -150,7 +150,7 @@ const whileSumThrees = () =>{
 
 }
 
-  // Identifying multiples of 4, 10, and both from numbers 1 to 100.
+// Identifying multiples of 4, 10, and both from numbers 1 to 100.
 const tenFour = () =>{
   /* 
   Counts from numbers 1 to 100 and logs multiples of 4 as 'Four', multiples of 10 as 
@@ -177,7 +177,7 @@ const tenFour = () =>{
 
 }
 
-  // Determining century for any given year
+// Determining century for any given year
 const centuryFromYear = () =>{
   /* Prompts user for a year greater than 1 and optputs the century of that year. */
   
