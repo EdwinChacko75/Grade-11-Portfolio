@@ -12,15 +12,15 @@ body {
     /* Logo */
 .nav #logo {
     width: auto;
-    height: 96px;
+    height: 6.384vw;
     overflow: hidden;
-    margin-top: -6px;
-    margin-bottom: -6px;
+    margin-top: -0.399vw;
+    margin-bottom: -0.399vw;
 }
     /* File Paths */
 .nav ul {
     list-style-type: none; 
-    font-size: 20px;
+    font-size: 1.33vw;
     background-color: #1181B2;
     font-family: 'Newsreader', serif;
     text-align: center;
@@ -34,7 +34,7 @@ body {
 .nav li a {
     display: block;
     color: #000000;
-    padding: 35px 60px 35px 60px;
+    padding: 2.3275vw 3.99vw 2.3275vw 3.99vw;
     text-decoration: none;
 }
 .nav li a:hover {
@@ -51,11 +51,11 @@ h1 {
     text-align: center;
 }
 h1 span {
-    font-size: 40px;
+    font-size: 2.66vw;
     color: #DDEDF4;
     background-color: #212221;
-    padding: 15px;
-    width: 200px;
+    padding: 0.9975vw;
+    width: 13.3vw;
     font-family: 'Newsreader', serif;
     font-weight: normal;
     border-style: solid;
@@ -79,28 +79,28 @@ h1 span {
 }
 #welcome-content {
     color: #DDEDF4;
-    font-size: 40px;
+    font-size: 2.66vw;
     font-family: 'Source Sans Pro', sans-serif;
     background: rgb(33, 34, 33);
     background: rgba(33, 34, 33, 0.8);
-    padding: 10px;    
-    margin: 5px;
+    padding: 0.665vw;    
+    margin: 0.3325vw;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-color: #44449B;
     border-style: solid;
-    border-width: 2px;
+    border-width: 0.133vw;
 }
 /* Home Page Section 2 */
 #site-introduction {
     position: relative;
-    margin: 5% 8% 20% 7%;
+    margin: 5% 8% 15% 7%;
 }
 #site-introduction-header {
     text-align: center;
-    font-size: 25px;
+    font-size: 1.6625vw;
     font-family: 'Newsreader', serif;
     color: #DDEDF4;
     text-decoration: underline #1181B2;
@@ -111,20 +111,20 @@ h1 span {
     position: absolute;
     bottom: 17%;
     left: 56%;
-    font-size: 25px;
+    font-size: 1.6625vw;
     line-height: 1.5;
-    padding: 15px;
+    padding: 0.9975vw;
     background-color: #1181B2;
     color: #DDEDF4;
-    border-radius: 30px;
+    border-radius: 1.995vw;
 }
 #code-image {
-    width: 600px;
+    width: 39.9vw;
     height: auto;
     border-style: solid;
     border-color: #1181B2;
     border-width: 0.5em;
-    border-radius: 30px;
+    border-radius: 1.995vw;
 }
     /* Code Image Glare Effect */
 #site-introduction figure {
@@ -181,12 +181,12 @@ h1 span {
     width: 66.6666%;
     transform: translate(-50%, -50%);
     font-family:  'Source Sans Pro', sans-serif;
-    font-size: 40px;
+    font-size: 2.66vw;
     color: #212221;
-    padding: 30px;
+    padding: 1.995vw;
     border-style: dashed;
     border-color: #212221;
-    border-width: 3px;
+    border-width: 0.1995vw;
     background: rgb(221, 237, 244);
     background: rgba(221, 237, 244, 0.65);
 }
@@ -198,7 +198,7 @@ h1 span {
 #intrests-header {
     text-align: center;
     color: #DDEDF4;
-    font-size: 25px;
+    font-size: 1.6625vw;
     font-family: 'Newsreader', serif;
     text-decoration: underline #DDEDF4;
 }
@@ -208,24 +208,24 @@ h1 span {
     top: 35%;
     left: 55%;
     margin-right: 5%;
-    font-size: 25px;
+    font-size: 1.6625vw;
     font-family: 'Source Sans Pro', sans-serif;
     color: #DDEDF4;
-    padding: 15px;
+    padding: 0.9975vw;
     border: #DDEDF4;
     border-style: solid;
-    border-width: 5px;
+    border-width: 0.3325vw;
     background: rgb(221, 237, 244);
     background: rgba(221, 237, 244, 0.3);
 }
 #albert-einstien {
-    width: 400px;
+    width: 26.6vw;
     height: auto;
     margin-left: 5%;
     border: #DDEDF4;
     border-style: solid;
     border-width: 0.5em;
-    border-radius: 1000px;
+    border-radius: 66.5vw;
 }
     /* Section 1.1 - Sports */
 #sports {
@@ -233,15 +233,15 @@ h1 span {
     margin: 0% 8% 50% 7%;
 }
 #sports-header {
-    font-size: 25px;
+    font-size: 1.6625vw;
     font-family: 'Newsreader', serif;
     color: #44449B;
     background-color: #DDEDF4;
-    padding: 1px 60px 1px 60px;
+    padding: 0.0665vw 3.99vw 0.0665vw 3.99vw;
     width: fit-content;
     margin-left: 7.1%;
     margin-bottom: 3%;
-    border-radius: 20px;
+    border-radius: 1.33vw;
 }
 #sports-content {
     position: absolute;
@@ -250,11 +250,11 @@ h1 span {
     text-align: center;
     color: #44449B;
     background: #DDEDF4;
-    padding: 25px;
-    font-size: 23px;
+    padding: 1.6625vw;
+    font-size: 1.5295vw;
     font-family: 'Source Sans Pro', sans-serif;
     margin-bottom: 10%;
-    border-radius: 20px;
+    border-radius: 1.33vw;
 }
 #kobe-image {
     position: absolute;
@@ -265,7 +265,7 @@ h1 span {
     border-width: 0.5em;
 }
 #kobe {
-    width: 500px;
+    width: 33.25vw;
     height: auto;
 }
 #kobe-image:hover {
@@ -274,7 +274,7 @@ h1 span {
 #kobe-caption {
     text-align: center;
     color: #44449B;
-    font-size: 20px;
+    font-size: 1.33;
     font-family: 'Newsreader', serif;
     background: rgb(221, 237, 244);
     background: rgba(221, 237, 244, 0.9);
@@ -285,15 +285,15 @@ h1 span {
     margin: 0% 8% 50% 7%;
 }
 #games-header {
-    font-size: 25px;
+    font-size: 1.6625vw;
     font-family: 'Newsreader', serif;
     color: #1181B2;
     background-color: #DDEDF4;
-    padding: 1px 60px 1px 60px;
+    padding: 0.0665vw 3.99vw 0.0665vw 3.99vw;
     width: fit-content;
     margin-left: 7.1%;
     margin-bottom: 3%;
-    border-radius: 20px;
+    border-radius: 1.33vw;
 }
 #games-content {
     text-align: center;
@@ -301,15 +301,15 @@ h1 span {
     top: 110%;
     left: 5%;
     right: 5%;
-    border-radius: 20px;
+    border-radius: 1.33vw;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 25px;
+    font-size: 1.6625vw;
     color: #1181B2;
     background: #DDEDF4;
-    padding: 25px;
+    padding: 1.6625vw;
 }
 #pawn-promotion-image {
-    width: 620px;
+    width: 41.25vw;
     height: auto;
     position:absolute;
     top: 340%;
@@ -326,18 +326,18 @@ h1 span {
 }
 #puzzle-context {
     text-align: left;
-    font-size: 30px;
+    font-size: 1.995vw;
     font-family: 'Newsreader', serif;
     color: #DDEDF4;
     background-color: #44449B;
-    padding: 15px;
+    padding: 0.9975vw;
     margin: 3% 25% 4% 10%;
     border: solid;
     border-color: #DDEDF4;
-    border-width: 2px;
+    border-width: 0.133vw;
 }
 #chess-puzzle-image {
-    width: 600px;
+    width: 39.9vw;
     height: auto;
     margin-left: 3%;
     position: relative;
@@ -346,7 +346,7 @@ h1 span {
     border-width: 0.7em;
     display: block;
     clear: both;
-    outline: 2px solid #DDEDF4;
+    outline: 0.133vw solid #DDEDF4;
 }
             /* Chess Puzzle Button */
 #puzzle-answer { 
@@ -355,15 +355,15 @@ h1 span {
     color: #DDEDF4;
     top: 56%; 
     left: 73%; 
-    font-size: 20px; 
-    padding: 15px; 
+    font-size: 1.33vw; 
+    padding: 0.9975vw; 
     border: solid;
     border-color: #DDEDF4;
-    border-width: 2px;
+    border-width: 0.133vw;
 } 
 #puzzle-answer::before { 
     content: "Answer"; 
-    font-size: 40px;
+    font-size: 2.66vw;
     position: absolute; 
     top: 0%; 
     left: 0%; 
@@ -382,14 +382,14 @@ h1 span {
     margin: 10% 8% 40% 7%;
 }
 #media-header {
-    font-size: 25px;
+    font-size: 1.6625vw;
     font-family: 'Newsreader', serif;
     color: #212221;
     background-color: #DDEDF4;
-    padding: 1px 60px 1px 60px;
+    padding: 0.0665vw 3.99vw 0.0665vw 3.99vw;
     width: fit-content;
     margin-left: 7.1%;
-    border-radius: 20px;
+    border-radius: 1.33vw;
     margin-bottom: 1%;
 }
 #media-content {
@@ -398,23 +398,23 @@ h1 span {
     top: 145%;
     left: 50%;
     right: 2%;
-    border-radius: 20px;
-    font-size: 21px;
+    border-radius: 1.33vw;
+    font-size: 1.3965vw;
     font-family: 'Source Sans Pro', sans-serif;
-    padding: 25px;
+    padding: 1.6625vw;
     color: #212221;
     background: #DDEDF4;
 }
 #middle-child-video {
-    width: 530px;
+    width: 35.245vw;
     height: auto;
     position: absolute;
     top: 188%;
     left: 0%;
     border: #DDEDF4;
     border-style: solid;
-    border-width: 3px;
-    border-radius: 20px;
+    border-width: 0.1995vw;
+    border-radius: 1.33vw;
 }
 #song-link {
     text-decoration: none;
@@ -422,7 +422,7 @@ h1 span {
     position: absolute;
     bottom: -367%;
     left: 1%;
-    padding: 5px 10px 5px 10px;
+    padding: 0.3325vw 0.665vw 0.3325vw 0.665vw;
 }
 #song-link:hover {
     color: #212221;
@@ -436,7 +436,7 @@ h1 span {
 #past-header {
     text-align: center;
     color: #DDEDF4;
-    font-size: 25px;
+    font-size: 1.6625vw;
     font-family: 'Newsreader', serif;
     text-decoration: underline #DDEDF4;
 }
@@ -446,34 +446,34 @@ h1 span {
     top: 21%;
     left: 53%;
     margin-right: 2%;
-    font-size: 21px;
+    font-size: 1.3965vw;
     font-family: 'Source Sans Pro', sans-serif;
     color: #DDEDF4;
-    padding: 15px;
+    padding: 0.9975vw;
     border: #DDEDF4;
     border-style: solid;
-    border-width: 5px;
+    border-width: 0.3325vw;
     background: rgb(221, 237, 244);
     background: rgba(221, 237, 244, 0.3);
 }
 #gauss-award {
     margin-top: 5%;
-    width: 540px;
+    width: 35.91vw;
     height: auto;
 }
 #gauss-caption {
     margin: 0% 68% 0% 1%;
-    padding: 5px 10px 5px 10px;
-    border: solid #44449B 3px;
+    padding: 0.3325vw 0.665vw 0.3325vw 0.665vw;
+    border: solid #44449B 0.1995vw;
     color: #44449B;
     background: #DDEDF4;
-    font-size: 17.5px;
+    font-size: 1.16375vw;
 }
     /* Section 3 Header */
 #future-header {
     text-align: center;
     color: #DDEDF4;
-    font-size: 25px;
+    font-size: 1.6625vw;
     font-family: 'Newsreader', serif;
     text-decoration: underline #DDEDF4;
 }
@@ -483,23 +483,23 @@ h1 span {
     margin: 5% 8% 5% 7%;
 }
 #career-header {
-    font-size: 25px;
+    font-size: 1.6625vw;
     font-family: 'Newsreader', serif;
     color: #DDEDF4;
     background-color: #1181B2;
-    padding: 1px 60px 1px 60px;
+    padding:  0.0665vw 3.99vw 0.0665vw 3.99vw;
     width: fit-content;
     margin-left: 7.1%;
-    border-radius: 20px;
+    border-radius: 1.33vw;
     margin-bottom: 1%;
 }
 #career-content {
     text-align: center;
     margin: 5% 20% 2% 15%;
-    border-radius: 20px;
-    font-size: 23px;
+    border-radius: 1.33vw;
+    font-size: 1.5295vw;
     font-family: 'Source Sans Pro', sans-serif;
-    padding: 25px;
+    padding: 1.6625vw;
     color: #DDEDF4;
     background: #1181B2;
 }
@@ -509,26 +509,26 @@ h1 span {
     margin: 1% 8% 5% 7%;
 }
 #fact-header {
-    font-size: 25px;
+    font-size: 1.6625vw;
     font-family: 'Newsreader', serif;
     color: #1181B2;
     background-color: #DDEDF4;
-    padding: 1px 30px 1px 30px;
+    padding: 0.0665vw 1.995vw 0.0665vw 1.995vw;
     width: fit-content;
     margin-left: 43.5%;
-    border-radius: 20px;
+    border-radius: 1.33vw;
     margin-bottom: 6%;
     border: #1181B2;
     border-style: solid;
-    border-width: 5px;
+    border-width: 0.3325vw;
     
 }
 #fact-content {
     background-color: #DDEDF4;
-    border: #1181B2 solid 5px;
+    border: #1181B2 solid 0.1995vw;
     color: #212221;
-    font-size: 23px;
-    padding: 5px;
+    font-size: 1.5295vw;
+    padding: 0.3325vw;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     position: absolute;
@@ -537,7 +537,7 @@ h1 span {
     right: 10%;
 }
 #flight-sergant-badge {
-    width: 400px;
+    width: 26.6vw;
     height: auto;
     margin-left: 7%;
     border: #1181B2;
@@ -561,7 +561,7 @@ h1 span {
     z-index: 1;
     color: #212221;
     background-color: #DDEDF4;
-    font-size: 25px;
+    font-size: 1.6625vw;
     font-family: 'Newsreader', serif;
 }
 #other-content {
@@ -570,13 +570,13 @@ h1 span {
     top: 37%;
     left: 22%;
     right: 22%;
-    font-size: 25px;
+    font-size: 1.6625vw;
     font-family: 'Source Sans Pro', sans-serif;
     color: #DDEDF4;
-    padding: 15px;
+    padding: 0.9975vw;
     border: #DDEDF4;
     border-style: solid;
-    border-width: 5px;
+    border-width: 0.3325vw;
     background: rgb(33, 34, 33);
     background: rgba(33,34,33, 0.7);
 }
@@ -589,28 +589,28 @@ h1 span {
 }
 #button-context {
     color: #212221;
-    font-size: 35px;
+    font-size: 2.3275vw;
     font-family: 'Newsreader', serif;
     margin-bottom: 2%;
-    border:#212221 solid 3px;
+    border:#212221 solid 0.1995vw;
     margin-left: 30%;
     margin-right: 30%;
-    padding: 15px;
+    padding: 0.9975vw;
     background-color: #DDEDF4;
 }
         /* Back To Top Button */
 #top-button {
     color: #DDEDF4;
     background-color: #212221;
-    padding: 15px;
-    border: #DDEDF4 solid 2px;
-    font-size: 20px;
+    padding: 0.9975vw;
+    border: #DDEDF4 solid 0.133vw;
+    font-size: 1.33vw;
     font-family: 'Newsreader', serif;
 }
 #top-button:hover {
     color: #212221;
     background-color: #DDEDF4;
-    border: #212221 solid 3px;
+    border: #212221 solid 0.1995vw;
     cursor:pointer;
     transition: 200ms;
 }
@@ -637,9 +637,9 @@ h1 span {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family:  'Source Sans Pro', sans-serif;
-    font-size: 50px;
+    font-size: 3.325vw;
     color: #DDEDF4;
-    padding: 30px;
+    padding: 1.995vw;
     background: rgb(33, 34, 33);
     background: rgba(33, 34, 33, 0.65);
 }
@@ -650,7 +650,7 @@ h1 span {
     left: 43.9%;
 }
 #vault-portal button {
-    border: #DDEDF4 solid 3px;
+    border: #DDEDF4 solid 0.1995vw;
     background-color: #44449B;
     border-radius: 999px;
 }
@@ -659,11 +659,11 @@ h1 span {
     color: #DDEDF4;
     font-size: 1.6625vw;
     font-family: 'Newsreader', serif;
-    padding: 30px 60px 30px 60px;
+    padding: 1.995vw 2.99vw 1.995vw 2.99vw;
     text-decoration: none;
 }
 #vault-portal button:hover {
-    border: #44449B solid 5px;
+    border: #44449B solid 0.3325vw;
     background-color: #DDEDF4;
     border-radius: 999px;
     transition: 200ms;
@@ -687,7 +687,7 @@ h1 span {
     padding: 0.5% 0% 0.5% 0% ;
     background-color: #1181B2;
     color: #DDEDF4;
-    border: #DDEDF4 solid 3px;
+    border: #DDEDF4 solid 0.1995vw;
     margin: 0% 32.5% 4% 32.5%;
 }
 .buttons {
@@ -705,14 +705,14 @@ h1 span {
 .buttons:hover {
     color: #212221;
     background: #DDEDF4;
-    border: #212221 solid 3px;
+    border: #212221 solid 0.1995vw;
     transition: 300ms;
     cursor: pointer;
 }
 #answer-box {
     color: #212221;
     background: #DDEDF4;
-    border: #212221 solid 3px;
+    border: #212221 solid 0.1995vw;
     height: fit-content;
 }
 #answer-box:hover {
@@ -729,7 +729,7 @@ h1 span {
     box-shadow: none;
     color: #DDEDF4;
     background-color: #1181B2;
-    border: #DDEDF4 solid 3px;
+    border: #DDEDF4 solid 0.1995vw;
     transition: 0ms;
 }
 /* Tech Experience Section 1 */
@@ -753,38 +753,38 @@ h1 span {
     color: #44449B;    
     background: rgb(221, 237, 244);
     background: rgba(221, 237, 244, 0.7);
-    font-size: 18px;
+    font-size: 1.197vw;
     font-family: 'Newsreader', serif;
     text-decoration: underline;
     position: absolute;
-    width: 260px;
+    width: 17.29vw;
     z-index: 1;
     top: 19%;
     left: 42%;
     right: 43%;
     border-color: #44449B;
     border-style: solid;
-    border-width: 2px;
+    border-width: 0.133;
 }
 #skills-content {
     color: #44449B;
-    font-size: 25px;
+    font-size: 1.6625vw;
     font-family: 'Source Sans Pro', sans-serif;
     background: rgb(221, 237, 244);
     background: rgba(221, 237, 244, 0.65);
-    padding: 10px;    
-    margin: 5px;
+    padding: 0.665vw;    
+    margin: 0.3325vw;
     position: absolute;
     top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-color: #44449B;
     border-style: solid;
-    border-width: 2px;
+    border-width: 0.133vw;
 }
     /* Fundraising Project Link */
 #fundraiser-link {
-    font-size: 20px;
+    font-size: 1.33vw;
     font-family: 'Newsreader', serif;
     text-decoration: none;
     position: absolute;
@@ -793,17 +793,17 @@ h1 span {
     right: inherit;    
     color: #DDEDF4;
     background-color: #44449B;
-    padding: 15px;
+    padding: 0.9975vw;
     border-color: #212221;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0.0665vw;
 }
 #fundraiser-link:hover {
     color: #44449B;
     background-color: #DDEDF4;
     border-color: #44449B;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0.0665vw;
     transition: 200ms;
 }
 /* Tech Experience Section 2 */
@@ -815,19 +815,19 @@ h1 span {
     text-align: center;
     margin-top: 5%;
     color: #DDEDF4;
-    font-size: 25px;
+    font-size: 1.6625vw;
     font-family: 'Newsreader', serif;
-    text-decoration: underline #44449B 5px;
+    text-decoration: underline #44449B 0.3325vw;
 }
 #anonymous-hacker {
-    width: 400px;
+    width: 26.6vw;
     height: auto;
     position: relative;
     left: 3%;
     border-style: solid;
     border-color: #44449B;
     border-width: 0.5em;
-    border-radius: 1000px;
+    border-radius: 66.5vw;
 }
 #experience-content {
     text-align: center;
@@ -835,14 +835,14 @@ h1 span {
     top: 27%;
     left: 50%;
     margin-right: 5%;
-    padding: 15px;
+    padding: 0.9975vw;
     color: #DDEDF4;
-    font-size: 25px;
+    font-size: 1.6625vw;
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #44449B;
     border-style: solid;
     border-color: #1181B2;
-    border-width: 5px;
-    border-radius: 10px;
+    border-width: 0.3325vw;
+    border-radius: 0.665vw;
 }
 /* The End!! */
