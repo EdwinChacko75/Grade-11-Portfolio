@@ -204,7 +204,7 @@ const centuryFromYear = () =>{
   ? output = `The year ${year} is in the ${century}rd century!`
   : output = `The year ${year} is in the ${century}th century!`
   )
-  console.log(secondLast);
+  
   document.getElementById("answer-box").innerHTML = output;
 
 }
