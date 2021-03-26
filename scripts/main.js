@@ -184,11 +184,18 @@ const centuryFromYear = () =>{
   let year = parseInt(prompt('If you could travel to any year, what year would you go to?'));
   let century = Math.floor((year-1)/100) + 1;
   let lastDig = century % 10;
+  let secondLast = century % 100;
   
   ((century === 0 || century < 0) 
   ? output = `Time travel is cool and all, but what even is the year ${year}?`
   : (Number.isNaN(century))
   ? open("https://www.youtube.com/watch?v=ZJEIKkPXirg&ab_channel=KidsAcademy")
+  : (secondLast > 10 && secondLast < 14 && lastDig === 1)
+  ? output = `${year} is in the ${century}th century!`
+  : (secondLast > 10 && secondLast < 14  && lastDig === 2)
+  ? output = `${year} is in the ${century}th century!`
+  : (secondLast > 10 && secondLast < 14  && lastDig === 3)
+  ? output = `${year} is in the ${century}th century!`
   : (lastDig === 1)
   ? output = `${year} is in the ${century}st century!`
   : (lastDig === 2)
@@ -197,7 +204,7 @@ const centuryFromYear = () =>{
   ? output = `The year ${year} is in the ${century}rd century!`
   : output = `The year ${year} is in the ${century}th century!`
   )
-
+  console.log(secondLast);
   document.getElementById("answer-box").innerHTML = output;
 
 }
