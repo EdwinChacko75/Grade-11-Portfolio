@@ -1,9 +1,5 @@
 //Vault Entry Message
-const vault = () =>{
-  
-  alert("Looks like you've stubmbled into my vault where I store my most classified projects...");
-
-}
+const vault = () => alert("Looks like you've stubmbled into my vault where I store my most classified projects...");
 
 // About Me Button To Top
 mybutton = document.getElementById("top-button");
@@ -230,8 +226,22 @@ const thirdAngle = () =>{
 }
 
 // Reset answer box to display 'Answer Box'
-const resetAnswerBox = () => {
+const resetAnswerBox = () => document.getElementById("answer-box").innerHTML = 'Answer Box';
 
-  document.getElementById("answer-box").innerHTML = 'Answer Box';
+// // Text Encryption Function
+const encrypt = () => {
+  
+  let plaintext = prompt('Enter you top secret message here:');
 
-} 
+  document.getElementById("answer-box").innerHTML = ciphertext;
+
+}
+
+// Text Decryption Function
+const decrypt = () => {
+  
+  let ciphertext = prompt('Enter you encrypted message here:');
+
+  document.getElementById("answer-box").innerHTML = plaintext;
+
+}
