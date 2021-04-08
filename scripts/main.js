@@ -228,10 +228,22 @@ const thirdAngle = () =>{
 // Reset answer box to display 'Answer Box'
 const resetAnswerBox = () => document.getElementById("answer-box").innerHTML = 'Answer Box';
 
-// // Text Encryption Function
+let random = Math.floor(Math.random() * 9 + 2) ;
+console.log(random);
+
+// Text Encryption Function
 const encrypt = () => {
-  
+  /* 
+  encrypt() prompts the user for a message which is then encrypted 
+  and output to the answer-box 
+  */
+
   let plaintext = prompt('Enter you top secret message here:');
+
+
+
+
+
 
   document.getElementById("answer-box").innerHTML = ciphertext;
 
@@ -239,7 +251,11 @@ const encrypt = () => {
 
 // Text Decryption Function
 const decrypt = () => {
-  
+  /* 
+  decrypt() takes the users encryted message, decrypts it,  
+  and outputs to the answer-box their original message
+  */
+
   let ciphertext = prompt('Enter you encrypted message here:');
 
   document.getElementById("answer-box").innerHTML = plaintext;
