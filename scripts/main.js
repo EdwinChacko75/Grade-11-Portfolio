@@ -261,7 +261,7 @@ const encrypt = () => {
 
     let reverseText = '';
 
-    for(let i = plainText.length - 1; i > -1; i--) {
+    for(let i = plainText.length - 1; i > - 1; i--) {
       reverseText += plainText[i]
     }
     
@@ -281,10 +281,16 @@ const encrypt = () => {
       ? order =  middle.concat(beginning).concat(end)
       : (random1 < random2 && random2 < random3)
       ? order = beginning.concat(end).concat(middle)
-      : order = end.concat(middle).concat(beginning)
+      : order = end.concat(beginning).concat(middle)
     );
-    
-    document.getElementById("answer-box").innerHTML = cipherText;
+   
+    let disorder = order.split('');
+
+    for(let i = disorder.length - 1; i > - 1; i--) {
+      
+    }
+
+    document.getElementById("answer-box").innerHTML = order;
   }
   
 }
@@ -295,7 +301,7 @@ function decrypt() {
   decrypt() takes the users encryted message, decrypts it,  
   and outputs to the answer-box their original message
   */
-
+  
     
 
   document.getElementById("answer-box").innerHTML = "edwin";
