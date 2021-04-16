@@ -672,6 +672,39 @@ h1 span {
     color: #44449B;
 }
 /* Vault Page */
+/* Encryption Assignment Buttons */
+.buttons-2 {
+    font-size: 1.5295vw;
+    font-family: 'Newsreader', serif;
+    padding: 2% 5% 2% 5%;
+    color: #DDEDF4;
+    background-color: #1181B2;
+    border: #DDEDF4 solid 0.1995vw;
+    width: 15vw;
+    height: 5.8vw; 
+}
+.buttons-2:hover {
+    cursor: pointer;
+    color: #DDEDF4;
+    background-color: #44449B;
+    border: #DDEDF4 solid 0.1995vw;
+    transition: 200ms;
+}
+#encrypt {
+    position: absolute;
+    left: 12.9vw;
+    top: 9.5vw;
+
+}
+#decrypt {
+    position: absolute;
+    right: 12.9vw;
+    top: 9.5vw;
+}
+
+
+
+
 /* Button Assignment */
 .vault {
     background-color: #44449B;

@@ -81,8 +81,6 @@ const threeNumberSort = () =>{
     ? output = `I've taken the liberty to numerically order your numbers: ${num2}, ${num3}, ${num1}.`
     : (num1 < num2 && num2 > num3 && num1 > num3)
     ? output = `I've taken the liberty to numerically order your numbers: ${num3}, ${num1}, ${num2}.`
-    : (num1 > num2 && num2 < num3 && num1 > num3)
-    ? output = `I've taken the liberty to numerically order your numbers: ${num1}, ${num3}, ${num2}.`
     : (num1 < num2 && num2 > num3 && num1 < num3)
     ? output = `I've taken the liberty to numerically order your numbers: ${num1}, ${num3}, ${num2}.`
     : (num1 > num2 && num2 < num3 && num1 < num3)
@@ -228,36 +226,78 @@ const thirdAngle = () =>{
 // Reset answer box to display 'Answer Box'
 const resetAnswerBox = () => document.getElementById("answer-box").innerHTML = 'Answer Box';
 
-let random = Math.floor(Math.random() * 9 + 2) ;
-console.log(random);
+// Random 3 Numbers
+
+let random1 = '';
+let random2 = '';
+let random3 = '';
+
+const random = () => {
+  /*
+  Generates 3 random integers that are later used in encryption and decryption
+  */
+  const numbers = Array(9).fill().map((_, index) => index + 1); // Inspired by Felix Lemke on StackOverflow
+  numbers.sort(() => Math.random() - 0.5);
+  
+  random1 = numbers.slice(0, 1);  
+  random2 = numbers.slice(1, 2);
+  random3 = numbers.slice(2, 3);
+}
 
 // Text Encryption Function
+let cipherText = '';
+
 const encrypt = () => {
   /* 
   encrypt() prompts the user for a message which is then encrypted 
   and output to the answer-box 
   */
 
-  let plaintext = prompt('Enter you top secret message here:');
+  let plainText = prompt('Enter you top secret message here:');
+  
+  if (plainText === null) {
+    document.getElementById("answer-box").innerHTML =  "You're no fun, enter something to be encrypted"
+  } else {
 
+    let reverseText = '';
 
+    for(let i = plainText.length - 1; i > -1; i--) {
+      reverseText += plainText[i]
+    }
+    
+    let beginning = reverseText.slice(0, Math.ceil(plainText.length/3));
+    let end = reverseText.slice(-Math.ceil(plainText.length/3));
+    let middle = reverseText.replace(beginning, '').replace(end, '');
 
-
-
-
-  document.getElementById("answer-box").innerHTML = ciphertext;
-
+    ((random1 > random2 && random2 > random3) 
+      ? order = end.concat(middle).concat(beginning)
+      : (random1 > random2 && random2 < random3 && random1 > random3) 
+      ? order = middle.concat(end).concat(beginning)
+      : (random1 < random2 && random2 > random3 && random1 > random3)
+      ? order =  end.concat(beginning).concat(middle)
+      : (random1 < random2 && random2 > random3 && random1 < random3)
+      ? order = beginning.concat(end).concat(middle)
+      : (random1 > random2 && random2 < random3 && random1 < random3)
+      ? order =  middle.concat(beginning).concat(end)
+      : (random1 < random2 && random2 < random3)
+      ? order = beginning.concat(end).concat(middle)
+      : order = end.concat(middle).concat(beginning)
+    );
+    
+    document.getElementById("answer-box").innerHTML = cipherText;
+  }
+  
 }
 
 // Text Decryption Function
-const decrypt = () => {
+function decrypt() {
   /* 
   decrypt() takes the users encryted message, decrypts it,  
   and outputs to the answer-box their original message
   */
 
-  let ciphertext = prompt('Enter you encrypted message here:');
+    
 
-  document.getElementById("answer-box").innerHTML = plaintext;
-
+  document.getElementById("answer-box").innerHTML = "edwin";
+  
 }
