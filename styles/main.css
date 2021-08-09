@@ -46,6 +46,11 @@ body {
     background-color: #212221;
 }
 
+/* Logo Link Padding */
+#logo-link {
+    padding: 0%;
+}
+
 /* Page Header Visuals */
 h1 {
     text-align: center;
