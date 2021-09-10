@@ -166,7 +166,6 @@ const tenFour = () =>{
 
   }
   
-  console.log(answer);
   document.getElementById("answer-box").innerHTML = 'Check Out The Console';
 
 }
@@ -468,7 +467,7 @@ const encrypt = () => {
     }
       
     document.getElementById("answer-box").innerHTML = cipherText; //Outputs the encrypted message to 'answer-box'
-    console.log(cipherText);
+    
   }
   
 }
