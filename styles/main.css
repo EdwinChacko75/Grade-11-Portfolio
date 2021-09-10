@@ -33,15 +33,11 @@ body {
 }
 .nav li a {
     display: block;
-    color: #000000;
+    color: black;
     padding: 2.3275vw 3.99vw 2.3275vw 3.99vw;
     text-decoration: none;
 }
-.nav li a:hover {
-    color: #DDEDF4;
-    background-color: #212221;
-}
-.nav a.active {
+.nav li a:hover,.nav a.active {
     color: #DDEDF4;
     background-color: #212221;
 }
@@ -65,6 +61,7 @@ h1 span {
     font-weight: normal;
     border-style: solid;
 }
+
 /* Home Page Container */
 #welcome-container {
     position: relative;
@@ -78,6 +75,7 @@ h1 span {
     z-index: 1;
 }
 #galaxy-background {
+    position: relative;
     width: 100%;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
@@ -94,9 +92,7 @@ h1 span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-color: #44449B;
-    border-style: solid;
-    border-width: 0.133vw;
+    border: #44449B solid 0.133vw;
 }
 /* Home Page Section 2 */
 #site-introduction {
@@ -523,9 +519,7 @@ h1 span {
     margin-left: 43.5%;
     border-radius: 1.33vw;
     margin-bottom: 6%;
-    border: #1181B2;
-    border-style: solid;
-    border-width: 0.3325vw;
+    border: #1181B2 solid 0.3325vw;
     
 }
 #fact-content {
@@ -545,9 +539,7 @@ h1 span {
     width: 26.6vw;
     height: auto;
     margin-left: 7%;
-    border: #1181B2;
-    border-style: solid;
-    border-width: 0.5em;
+    border: #1181B2 solid 0.5em;
 }
         /* Section 3.1 - Other */
 #other-container {
@@ -706,9 +698,6 @@ h1 span {
     right: 12.9vw;
     top: 9.5vw;
 }
-
-
-
 
 /* Button Assignment */
 .vault {
