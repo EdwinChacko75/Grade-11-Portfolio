@@ -253,6 +253,7 @@ const random = () => {
   let beginning = '';
   let end = '';
   let middle = '';
+  
 
 const encrypt = () => {
   /* 
@@ -261,7 +262,100 @@ const encrypt = () => {
   */
 
   let plainText = prompt('Enter you top secret message here:');
-  
+  let v1 = "";
+  let v2 = "";
+  let v3 = "";
+  let v4 = "";
+  let v5 = "";
+  let v6 = "";
+  let v7 = "";
+  let v8 = "";
+  let v9 = "";
+  let v10 = "";
+  let v11 = "";
+  let v12 = "";
+  let v13 = "";
+  let v14 = "";
+  let v15 = "";
+  let v16 = "";
+  let v17 = "";
+  let v18 = "";
+  let v19 = "";
+  let v20 = "";
+  let v21 = "";
+  let v22 = "";
+  let v23 = "";
+  let v24 = "";
+  let v25 = "";
+  let v26 = "";
+  let v27 = "";
+  let v28 = "";
+  let v29 = "";
+  let v30 = "";
+  let v31 = "";
+  let v32 = "";
+  let v33 = "";
+  let v34 = "";
+  let v35 = "";
+  let v36 = "";
+  let v37 = "";
+  let v38 = "";
+  let v39 = "";
+  let v40 = "";
+  let v41 = "";
+  let v42 = "";
+  let v43 = "";
+  let v44 = "";
+  let v45 = "";
+  let v46 = "";
+  let v47 = "";
+  let v48 = "";
+  let v49 = "";
+  let v50 = "";
+  let v51 = "";
+  let v52 = "";
+  let v53 = "";
+  let v54 = "";
+  let v55 = "";
+  let v56 = "";
+  let v57 = "";
+  let v58 = "";
+  let v59 = "";
+  let v60 = "";
+  let v61 = "";
+  let v62 = "";
+  let v63 = "";
+  let v64 = "";
+  let v65 = "";
+  let v66 = "";
+  let v67 = "";
+  let v68 = "";
+  let v69 = "";
+  let v70 = "";
+  let v71 = "";
+  let v72 = "";
+  let v73 = "";
+  let v74 = "";
+  let v75 = "";
+  let v76 = "";
+  let v77 = "";
+  let v78 = "";
+  let v79 = "";
+  let v80 = "";
+  let v81 = "";
+  let v82 = "";
+  let v83 = "";
+  let v84 = "";
+  let v85 = "";
+  let v86 = "";
+  let v87 = "";
+  let v88 = "";
+  let v89 = "";
+  let v90 = "";
+  let v91 = "";
+  let v92 = "";
+  let v93 = "";
+
   if (plainText === null || plainText == '') { //If nothing is entered
 
     document.getElementById("answer-box").innerHTML =  "You're no fun, enter something to be encrypted"
@@ -299,56 +393,73 @@ const encrypt = () => {
     
     let disorder = order.split(''); //Creates an array of the order variable
     let cipherText = '';
-    
-    for(let i = 0; i < disorder.length; i++) { //Loops through disorder and for each character, assigns the encrypted character to cipherText
 
-      ((disorder[i] == ' ') ? cipherText += 'Ξ'
-        : (disorder[i] == '1') ? cipherText += '@' : (disorder[i] == '2') ? cipherText += 'ͷ'
-        : (disorder[i] == '3') ? cipherText += 'ᾮ' : (disorder[i] == '4') ? cipherText += 'ꬩ'
-        : (disorder[i] == '5') ? cipherText += '᎒' : (disorder[i] == '6') ? cipherText += '‼'
-        : (disorder[i] == '7') ? cipherText += '⁈' : (disorder[i] == '8') ? cipherText += 'Ѡ'
-        : (disorder[i] == '9') ? cipherText += '⑫' : (disorder[i] == '0') ? cipherText += '҉'
-        : (disorder[i] == '!') ? cipherText += 'ɇ' : (disorder[i] == '@') ? cipherText += '0' 
-        : (disorder[i] == '#') ? cipherText += '8' : (disorder[i] == '$') ? cipherText += '₪'
-        : (disorder[i] == '%') ? cipherText += '4' : (disorder[i] == '^') ? cipherText += '6'
-        : (disorder[i] == '&') ? cipherText += '9' : (disorder[i] == '*') ? cipherText += '1'
-        : (disorder[i] == '(') ? cipherText += '2' : (disorder[i] == ')') ? cipherText += 'ﾈ'
-        : (disorder[i] == '_') ? cipherText += ')' : (disorder[i] == '-') ? cipherText += '('
-        : (disorder[i] == '=') ? cipherText += 'σ' : (disorder[i] == '+') ? cipherText += '&'
-        : (disorder[i] == "'") ? cipherText += 'r' : (disorder[i] == '"') ? cipherText += '*'
-        : (disorder[i] == ';') ? cipherText += '$' : (disorder[i] == ':') ? cipherText += 'T'
-        : (disorder[i] == '.') ? cipherText += '^' : (disorder[i] == ',') ? cipherText += '?'
-        : (disorder[i] == '>') ? cipherText += 'S' : (disorder[i] == '<') ? cipherText += 'l'
-        : (disorder[i] == '?') ? cipherText += '}' : (disorder[i] == '[') ? cipherText += '|'
-        : (disorder[i] == ']') ? cipherText += 'q' : (disorder[i] == '}') ? cipherText += 'F'
-        : (disorder[i] == '{') ? cipherText += 'N' : (disorder[i] == '`') ? cipherText += 'ഉ' 
-        : (disorder[i] == '~') ? cipherText += 'R' : (disorder[i] == '|') ? cipherText += 'a'
-        : (disorder[i] == 'a') ? cipherText += 'X' : (disorder[i] == 'b') ? cipherText += '╳'
-        : (disorder[i] == 'c') ? cipherText += '‡' : (disorder[i] == 'd') ? cipherText += 'ℍ'
-        : (disorder[i] == 'e') ? cipherText += '∰' : (disorder[i] == 'f') ? cipherText += 'ↂ'
-        : (disorder[i] == 'g') ? cipherText += '◎' : (disorder[i] == 'h') ? cipherText += '⛔'
-        : (disorder[i] == 'i') ? cipherText += 'ക' : (disorder[i] == 'j') ? cipherText += 'ↆ'
-        : (disorder[i] == 'k') ? cipherText += '高' : (disorder[i] == 'l') ? cipherText += '╯'
-        : (disorder[i] == 'm') ? cipherText += 'ﬗ' : (disorder[i] == 'n') ? cipherText += '≋'
-        : (disorder[i] == 'o') ? cipherText += '→' : (disorder[i] == 'p') ? cipherText += '⚡'
-        : (disorder[i] == 'q') ? cipherText += '⎳' : (disorder[i] == 'r') ? cipherText += '▓'
-        : (disorder[i] == 's') ? cipherText += '⌛' : (disorder[i] == 't') ? cipherText += 'Ͳ'
-        : (disorder[i] == 'u') ? cipherText += '▛' : (disorder[i] == 'v') ? cipherText += '◪'
-        : (disorder[i] == 'w') ? cipherText += 'ɀ' : (disorder[i] == 'x') ? cipherText += '☹' 
-        : (disorder[i] == 'y') ? cipherText += '♪' : (disorder[i] == 'z') ? cipherText += '⒵' 
-        : (disorder[i] == 'A') ? cipherText += '☢' : (disorder[i] == 'B') ? cipherText += 'z' 
-        : (disorder[i] == 'C') ? cipherText += 'Й' : (disorder[i] == 'D') ? cipherText += '∎'
-        : (disorder[i] == 'E') ? cipherText += 'Ж' : (disorder[i] == 'F') ? cipherText += '®'
-        : (disorder[i] == 'G') ? cipherText += '©' : (disorder[i] == 'H') ? cipherText += '¶'
-        : (disorder[i] == 'I') ? cipherText += 'þ' : (disorder[i] == 'J') ? cipherText += 'æ' 
-        : (disorder[i] == 'K') ? cipherText += 'Ð' : (disorder[i] == 'L') ? cipherText += '½'
-        : (disorder[i] == 'M') ? cipherText += '¢' : (disorder[i] == 'N') ? cipherText += 'ހ'
-        : (disorder[i] == 'O') ? cipherText += 'ﻊ' : (disorder[i] == 'P') ? cipherText += 'ຣ'
-        : (disorder[i] == 'Q') ? cipherText += 'ວ' : (disorder[i] == 'R') ? cipherText += 'ﺾ'
-        : (disorder[i] == 'S') ? cipherText += 'Ꮂ' : (disorder[i] == 'T') ? cipherText += 'ઊ'
-        : (disorder[i] == 'U') ? cipherText += 'Δ' : (disorder[i] == 'V') ? cipherText += 'ӻ'
-        : (disorder[i] == 'W') ? cipherText += 'ӿ' : (disorder[i] == 'X') ? cipherText += 'Ф'
-        : (disorder[i] == 'Y') ? cipherText += 'Ѫ' : (disorder[i] == 'Z') ? cipherText += 'Ƶ'
+    //Randomizes the assignment of the encrypted characters 
+    let arr1 = ["Ѫ","ઊ","ﺾ","Ж","ӿ","ວ",'ﬗ',"≋","╳","◪","‡","☹","⒵","╯","高","ↆ","⛔","◎","ↂ","ℍ","⌛","X","⚡","→","ക","▛","♪","Ͳ","▓",
+    "∰","ɀ","⎳","R","ഉ","}","S","l","/","^","?","$","T","r","*","\\",'a','q','|','F','N','σ',"(","&",")",'ﾈ','2','1','9','6','4',"₪",'8','0',
+    "ɇ",'҉','⑫','Ѡ','⁈','‼','᎒','ꬩ','ᾮ','ͷ','@','¢','ހ','z','ӻ','Й','Ф','Ƶ','½','Ð','æ','¶','©','®','∎','Ꮂ','☢','ຣ','ﻊ','þ','Δ']
+    arr1.sort(() => (Math.random() > .5) ? 1 : -1);
+    v1 += arr1[0]; v2 += arr1[1]; v3 += arr1[2]; v4 += arr1[3]; v5 += arr1[4]; v6 += arr1[5]; v7 += arr1[6]; v8 += arr1[7]; v9 += arr1[8]; v10 += arr1[9];
+    v11 += arr1[10]; v12 += arr1[11]; v13 += arr1[12]; v14 += arr1[13]; v15 += arr1[14]; v16 += arr1[15]; v17 += arr1[16]; v18 += arr1[17]; v19 += arr1[18];
+    v20 += arr1[19]; v21 += arr1[20]; v22 += arr1[21]; v23 += arr1[22]; v24 += arr1[23]; v25 += arr1[24]; v26 += arr1[25]; v27 += arr1[26]; v28 += arr1[27]; 
+    v29 += arr1[28]; v30 += arr1[29]; v31 += arr1[30]; v32 += arr1[31]; v33 += arr1[32]; v34 += arr1[33]; v35 += arr1[34]; v36 += arr1[35]; v37 += arr1[36]; 
+    v38 += arr1[37]; v39 += arr1[38]; v40 += arr1[39]; v41 += arr1[40]; v42 += arr1[41]; v43 += arr1[42]; v44 += arr1[43]; v45 += arr1[44]; v46 += arr1[45]; 
+    v47 += arr1[46]; v48 += arr1[47]; v49 += arr1[48]; v50 += arr1[49]; v51 += arr1[50]; v52 += arr1[51]; v53 += arr1[52]; v54 += arr1[53]; v55 += arr1[54]; 
+    v56 += arr1[55]; v57 += arr1[56]; v58 += arr1[57]; v59 += arr1[58]; v60 += arr1[59]; v61 += arr1[60]; v62 += arr1[61]; v63 += arr1[62]; v64 += arr1[63]; 
+    v65 += arr1[64]; v66 += arr1[65]; v67 += arr1[66]; v68 += arr1[67]; v69 += arr1[68]; v70 += arr1[70]; v71 += arr1[71]; v72 += arr1[72]; v73 += arr1[73]; 
+    v74 += arr1[74]; v75 += arr1[75]; v76 += arr1[76]; v77 += arr1[77]; v78 += arr1[78]; v79 += arr1[79]; v80 += arr1[80]; v81 += arr1[81]; v82 += arr1[82]; 
+    v83 += arr1[83]; v84 += arr1[69]; v85 += arr1[84]; v86 += arr1[85]; v87 += arr1[86]; v88 += arr1[87]; v89 += arr1[88]; v90 += arr1[89]; v91 += arr1[90]; 
+    v92 += arr1[91]; v93 += arr1[92];   
+
+    for(let i = 0; i < disorder.length; i++) { //Loops through disorder and for each character, assigns the encrypted character to cipherText
+      
+      ((disorder[i] == ' ') ? cipherText += v1
+        : (disorder[i] == '1') ? cipherText += v2 : (disorder[i] == '2') ? cipherText += v3
+        : (disorder[i] == '3') ? cipherText += v49 : (disorder[i] == '4') ? cipherText += v4
+        : (disorder[i] == '5') ? cipherText += v50 : (disorder[i] == '6') ? cipherText += v5
+        : (disorder[i] == '7') ? cipherText += v51 : (disorder[i] == '8') ? cipherText += v6
+        : (disorder[i] == '9') ? cipherText += v52 : (disorder[i] == '0') ? cipherText += v7
+        : (disorder[i] == '!') ? cipherText += v53 : (disorder[i] == '@') ? cipherText += v8
+        : (disorder[i] == '#') ? cipherText += v54 : (disorder[i] == '$') ? cipherText += v9
+        : (disorder[i] == '%') ? cipherText += v55 : (disorder[i] == '^') ? cipherText += v10
+        : (disorder[i] == '&') ? cipherText += v56 : (disorder[i] == '*') ? cipherText += v11
+        : (disorder[i] == '(') ? cipherText += v57 : (disorder[i] == ')') ? cipherText += v12
+        : (disorder[i] == '_') ? cipherText += v58 : (disorder[i] == '-') ? cipherText += v13
+        : (disorder[i] == '=') ? cipherText += v59 : (disorder[i] == '+') ? cipherText += v14
+        : (disorder[i] == "'") ? cipherText += v60 : (disorder[i] == '"') ? cipherText += v15
+        : (disorder[i] == ';') ? cipherText += v61 : (disorder[i] == ':') ? cipherText += v16
+        : (disorder[i] == '.') ? cipherText += v62 : (disorder[i] == ',') ? cipherText += v17
+        : (disorder[i] == '>') ? cipherText += v63 : (disorder[i] == '<') ? cipherText += v18
+        : (disorder[i] == '?') ? cipherText += v64 : (disorder[i] == '[') ? cipherText += v19
+        : (disorder[i] == ']') ? cipherText += v65 : (disorder[i] == '}') ? cipherText += v20
+        : (disorder[i] == '{') ? cipherText += v66 : (disorder[i] == '`') ? cipherText += v21
+        : (disorder[i] == '~') ? cipherText += v67 : (disorder[i] == '|') ? cipherText += v22
+        : (disorder[i] == 'a') ? cipherText += v68 : (disorder[i] == 'b') ? cipherText += v23
+        : (disorder[i] == 'c') ? cipherText += v69 : (disorder[i] == 'd') ? cipherText += v24
+        : (disorder[i] == 'e') ? cipherText += v70 : (disorder[i] == 'f') ? cipherText += v25
+        : (disorder[i] == 'g') ? cipherText += v71 : (disorder[i] == 'h') ? cipherText += v26
+        : (disorder[i] == 'i') ? cipherText += v72 : (disorder[i] == 'j') ? cipherText += v27
+        : (disorder[i] == 'k') ? cipherText += v73 : (disorder[i] == 'l') ? cipherText += v28
+        : (disorder[i] == 'm') ? cipherText += v74 : (disorder[i] == 'n') ? cipherText += v29
+        : (disorder[i] == 'o') ? cipherText += v75 : (disorder[i] == 'p') ? cipherText += v30
+        : (disorder[i] == 'q') ? cipherText += v76 : (disorder[i] == 'r') ? cipherText += v31
+        : (disorder[i] == 's') ? cipherText += v77 : (disorder[i] == 't') ? cipherText += v32
+        : (disorder[i] == 'u') ? cipherText += v78 : (disorder[i] == 'v') ? cipherText += v33
+        : (disorder[i] == 'w') ? cipherText += v79 : (disorder[i] == 'x') ? cipherText += v34
+        : (disorder[i] == 'y') ? cipherText += v80 : (disorder[i] == 'z') ? cipherText += v35
+        : (disorder[i] == 'A') ? cipherText += v81 : (disorder[i] == 'B') ? cipherText += v36
+        : (disorder[i] == 'C') ? cipherText += v82 : (disorder[i] == 'D') ? cipherText += v37
+        : (disorder[i] == 'E') ? cipherText += v83 : (disorder[i] == 'F') ? cipherText += v38
+        : (disorder[i] == 'G') ? cipherText += v84 : (disorder[i] == 'H') ? cipherText += v39
+        : (disorder[i] == 'I') ? cipherText += v85 : (disorder[i] == 'J') ? cipherText += v40
+        : (disorder[i] == 'K') ? cipherText += v86 : (disorder[i] == 'L') ? cipherText += v41
+        : (disorder[i] == 'M') ? cipherText += v87 : (disorder[i] == 'N') ? cipherText += v42
+        : (disorder[i] == 'O') ? cipherText += v88 : (disorder[i] == 'P') ? cipherText += v43
+        : (disorder[i] == 'Q') ? cipherText += v89 : (disorder[i] == 'R') ? cipherText += v44
+        : (disorder[i] == 'S') ? cipherText += v90 : (disorder[i] == 'T') ? cipherText += v45
+        : (disorder[i] == 'U') ? cipherText += v91 : (disorder[i] == 'V') ? cipherText += v46
+        : (disorder[i] == 'W') ? cipherText += v92 : (disorder[i] == 'X') ? cipherText += v47
+        : (disorder[i] == 'Y') ? cipherText += v93 : (disorder[i] == 'Z') ? cipherText += v48
         : cipherText += disorder[i]
       )
 
@@ -357,7 +468,7 @@ const encrypt = () => {
     }
       
     document.getElementById("answer-box").innerHTML = cipherText; //Outputs the encrypted message to 'answer-box'
-
+    console.log(cipherText);
   }
   
 }
@@ -368,78 +479,17 @@ function decrypt() {
   decrypt() takes the users encryted message, decrypts it,  
   and outputs their original message to the answer-box 
   */
-
-  let disorder = ''; //Declaring an empty string variable
-  
-  for(let i = 0; i < cipherText2.length; i++) {  //Loops through cipherText2 and for each character, assigns the decrypted character to disorder
  
-    ((cipherText2[i] == 'Ξ') ? disorder += ' '
-      : (cipherText2[i] == '@') ? disorder += '1' : (cipherText2[i] == 'ͷ') ? disorder += '2'
-      : (cipherText2[i] == 'ᾮ') ? disorder += '3' : (cipherText2[i] == 'ꬩ') ? disorder += '4'
-      : (cipherText2[i] == '᎒') ? disorder += '5' : (cipherText2[i] == '‼') ? disorder += '6'
-      : (cipherText2[i] == '⁈') ? disorder += '7' : (cipherText2[i] == 'Ѡ') ? disorder += '8'
-      : (cipherText2[i] == '⑫') ? disorder += '9' : (cipherText2[i] == '҉') ? disorder += '0'
-      : (cipherText2[i] == 'ɇ') ? disorder += '!' : (cipherText2[i] == '0') ? disorder += '@'
-      : (cipherText2[i] == '8') ? disorder += '#' : (cipherText2[i] == '₪') ? disorder += '$'
-      : (cipherText2[i] == '4') ? disorder += '%' : (cipherText2[i] == '6') ? disorder += '^'
-      : (cipherText2[i] == '9') ? disorder += '&' : (cipherText2[i] == '1') ? disorder += '*'
-      : (cipherText2[i] == '2') ? disorder += '(' : (cipherText2[i] == 'ﾈ') ? disorder += ')'
-      : (cipherText2[i] == ')') ? disorder += '_' : (cipherText2[i] == '(') ? disorder += '-'
-      : (cipherText2[i] == 'σ') ? disorder += '=' : (cipherText2[i] == '&') ? disorder += '+'
-      : (cipherText2[i] == 'r') ? disorder += "'" : (cipherText2[i] == '*') ? disorder += '"'
-      : (cipherText2[i] == '$') ? disorder += ';' : (cipherText2[i] == 'T') ? disorder += ':'
-      : (cipherText2[i] == '^') ? disorder += '.' : (cipherText2[i] == '?') ? disorder += ','
-      : (cipherText2[i] == 'S') ? disorder += '>' : (cipherText2[i] == 'l') ? disorder += '<'
-      : (cipherText2[i] == '}') ? disorder += '?' : (cipherText2[i] == '|') ? disorder += '['
-      : (cipherText2[i] == 'q') ? disorder += ']' : (cipherText2[i] == 'F') ? disorder += '}'
-      : (cipherText2[i] == 'N') ? disorder += '{' : (cipherText2[i] == 'ഉ') ? disorder += '`'
-      : (cipherText2[i] == 'R') ? disorder += '~' : (cipherText2[i] == 'a') ? disorder += '|'
-      : (cipherText2[i] == 'X') ? disorder += 'a' : (cipherText2[i] == '╳') ? disorder += 'b'
-      : (cipherText2[i] == '‡') ? disorder += 'c' : (cipherText2[i] == 'ℍ') ? disorder += 'd'
-      : (cipherText2[i] == '∰') ? disorder += 'e' : (cipherText2[i] == 'ↂ') ? disorder += 'f'
-      : (cipherText2[i] == '◎') ? disorder += 'g': (cipherText2[i] == '⛔') ? disorder += 'h'
-      : (cipherText2[i] == 'ക') ? disorder += 'i' : (cipherText2[i] == 'ↆ') ? disorder += 'j'
-      : (cipherText2[i] == '高') ? disorder += 'k' : (cipherText2[i] == '╯') ? disorder += 'l'
-      : (cipherText2[i] == 'ﬗ') ? disorder += 'm' : (cipherText2[i] == '≋') ? disorder += 'n'
-      : (cipherText2[i] == '→') ? disorder += 'o' : (cipherText2[i] == '⚡') ? disorder += 'p'
-      : (cipherText2[i] == '⎳') ? disorder += 'q' : (cipherText2[i] == '▓') ? disorder += 'r'
-      : (cipherText2[i] == '⌛') ? disorder += 's' : (cipherText2[i] == 'Ͳ') ? disorder += 't'
-      : (cipherText2[i] == '▛') ? disorder += 'u' : (cipherText2[i] == '◪') ? disorder += 'v'
-      : (cipherText2[i] == 'ɀ') ? disorder += 'w' : (cipherText2[i] == '☹') ? disorder += 'x' 
-      : (cipherText2[i] == '♪') ? disorder += 'y' : (cipherText2[i] == '⒵') ? disorder += 'z'
-      : (cipherText2[i] == '☢') ? disorder += 'A' : (cipherText2[i] == 'z')  ? disorder += 'B'
-      : (cipherText2[i] == 'Й') ? disorder += 'C' : (cipherText2[i] == '∎') ? disorder += 'D'
-      : (cipherText2[i] == 'Ж') ? disorder += 'E' : (cipherText2[i] == '®') ? disorder += 'F'
-      : (cipherText2[i] == '©') ? disorder += 'G' : (cipherText2[i] == '¶') ? disorder += 'H'
-      : (cipherText2[i] == 'þ') ? disorder += 'I' : (cipherText2[i] == 'æ') ? disorder += 'J'
-      : (cipherText2[i] == 'Ð') ? disorder += 'K' : (cipherText2[i] == '½') ? disorder += 'L' 
-      : (cipherText2[i] == '¢') ? disorder += 'M' : (cipherText2[i] == 'ހ') ? disorder += 'N' 
-      : (cipherText2[i] == 'ﻊ') ? disorder += 'O' : (cipherText2[i] == 'ຣ') ? disorder += 'P' 
-      : (cipherText2[i] == 'ວ') ? disorder += 'Q' : (cipherText2[i] == 'ﺾ') ? disorder += 'R' 
-      : (cipherText2[i] == 'Ꮂ') ? disorder += 'S' : (cipherText2[i] == 'ઊ') ? disorder += 'T' 
-      : (cipherText2[i] == 'Δ') ? disorder += 'U' : (cipherText2[i] == 'ӻ') ? disorder += 'V' 
-      : (cipherText2[i] == 'ӿ') ? disorder += 'W' : (cipherText2[i] == 'Ф') ? disorder += 'X' 
-      : (cipherText2[i] == 'Ѫ') ? disorder += 'Y' : (cipherText2[i] == 'Ƶ') ? disorder += 'Z' 
-      : disorder += cipherText2[i]
-    )
-    
-  }
+  if (cipherText2.length == 1){ //If only 1 characer was initially input
 
-  if (disorder.length == 1){ //If only 1 characer was initially input
-
-    document.getElementById("answer-box").innerHTML = disorder
+    document.getElementById("answer-box").innerHTML = beginning
 
   } else { //If multiple characters were initially input
 
-      reverseText = beginning.concat(middle).concat(end) //Puts message reversed order
-      
-      let plainText = '';
+    let reverseText = beginning.concat(middle).concat(end); //Restructures the message into its reversed form
+    let plainText = reverseText.split("").reverse().join(""); //Turns the string into an array, reverses it, and returns it back to a string
 
-      for(let i = reverseText.length - 1; i > - 1; i--) { //Reverses the reversed message 
-        plainText += reverseText[i]
-      }
-      
-      document.getElementById("answer-box").innerHTML = plainText; //Outputs the decrypted message to 'answer-box'
+    document.getElementById("answer-box").innerHTML = plainText //Outputs the decrypted message to 'answer-box'
 
   } 
   
