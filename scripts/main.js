@@ -252,7 +252,7 @@ const random = () => {
   let beginning = '';
   let end = '';
   let middle = '';
-  
+  let test = '';
 
 const encrypt = () => {
   /* 
@@ -260,100 +260,22 @@ const encrypt = () => {
   and output to the answer-box 
   */
 
+  
   let plainText = prompt('Enter you top secret message here:');
-  let v1 = "";
-  let v2 = "";
-  let v3 = "";
-  let v4 = "";
-  let v5 = "";
-  let v6 = "";
-  let v7 = "";
-  let v8 = "";
-  let v9 = "";
-  let v10 = "";
-  let v11 = "";
-  let v12 = "";
-  let v13 = "";
-  let v14 = "";
-  let v15 = "";
-  let v16 = "";
-  let v17 = "";
-  let v18 = "";
-  let v19 = "";
-  let v20 = "";
-  let v21 = "";
-  let v22 = "";
-  let v23 = "";
-  let v24 = "";
-  let v25 = "";
-  let v26 = "";
-  let v27 = "";
-  let v28 = "";
-  let v29 = "";
-  let v30 = "";
-  let v31 = "";
-  let v32 = "";
-  let v33 = "";
-  let v34 = "";
-  let v35 = "";
-  let v36 = "";
-  let v37 = "";
-  let v38 = "";
-  let v39 = "";
-  let v40 = "";
-  let v41 = "";
-  let v42 = "";
-  let v43 = "";
-  let v44 = "";
-  let v45 = "";
-  let v46 = "";
-  let v47 = "";
-  let v48 = "";
-  let v49 = "";
-  let v50 = "";
-  let v51 = "";
-  let v52 = "";
-  let v53 = "";
-  let v54 = "";
-  let v55 = "";
-  let v56 = "";
-  let v57 = "";
-  let v58 = "";
-  let v59 = "";
-  let v60 = "";
-  let v61 = "";
-  let v62 = "";
-  let v63 = "";
-  let v64 = "";
-  let v65 = "";
-  let v66 = "";
-  let v67 = "";
-  let v68 = "";
-  let v69 = "";
-  let v70 = "";
-  let v71 = "";
-  let v72 = "";
-  let v73 = "";
-  let v74 = "";
-  let v75 = "";
-  let v76 = "";
-  let v77 = "";
-  let v78 = "";
-  let v79 = "";
-  let v80 = "";
-  let v81 = "";
-  let v82 = "";
-  let v83 = "";
-  let v84 = "";
-  let v85 = "";
-  let v86 = "";
-  let v87 = "";
-  let v88 = "";
-  let v89 = "";
-  let v90 = "";
-  let v91 = "";
-  let v92 = "";
-  let v93 = "";
+  
+  /*
+  let v1 = ""; let v2 = ""; let v3 = ""; let v4 = ""; let v5 = ""; let v6 = ""; let v7 = ""; let v8 = ""; let v9 = "";
+  let v10 = ""; let v11 = ""; let v12 = ""; let v13 = ""; let v14 = ""; let v15 = ""; let v16 = ""; let v17 = ""; let v18 = "";
+  let v19 = ""; let v20 = ""; let v21 = ""; let v22 = ""; let v23 = ""; let v24 = ""; let v25 = ""; let v26 = ""; let v27 = "";
+  let v28 = ""; let v29 = ""; let v30 = ""; let v31 = ""; let v32 = ""; let v33 = ""; let v34 = ""; let v35 = ""; let v36 = "";
+  let v37 = ""; let v38 = ""; let v39 = ""; let v40 = ""; let v41 = ""; let v42 = ""; let v43 = ""; let v44 = ""; let v45 = "";
+  let v46 = ""; let v47 = ""; let v48 = ""; let v49 = ""; let v50 = ""; let v51 = ""; let v52 = ""; let v53 = ""; let v54 = "";
+  let v55 = ""; let v56 = ""; let v57 = ""; let v58 = ""; let v59 = ""; let v60 = ""; let v61 = ""; let v62 = ""; let v63 = "";
+  let v64 = ""; let v65 = ""; let v66 = ""; let v67 = ""; let v68 = ""; let v69 = ""; let v70 = ""; let v71 = ""; let v72 = "";
+  let v73 = ""; let v74 = ""; let v75 = ""; let v76 = ""; let v77 = ""; let v78 = ""; let v79 = ""; let v80 = ""; let v81 = "";
+  let v82 = ""; let v83 = ""; let v84 = ""; let v85 = ""; let v86 = ""; let v87 = ""; let v88 = ""; let v89 = ""; let v90 = "";
+  let v91 = ""; let v92 = ""; let v93 = "";
+  */ //use these vars in a conditional in decrypt() to properly decrypt. Globalize both Arr1's
 
   if (plainText === null || plainText == '') { //If nothing is entered
 
@@ -391,13 +313,42 @@ const encrypt = () => {
     );
     
     let disorder = order.split(''); //Creates an array of the order variable
+    /*
     let cipherText = '';
+    */
+    
+    /*for(var i = 0 ; i < labelssize; i ++)
+{
+  items[i][0] = labelhere;
+}
+*/
 
     //Randomizes the assignment of the encrypted characters 
-    let arr1 = ["Ѫ","ઊ","ﺾ","Ж","ӿ","ວ",'ﬗ',"≋","╳","◪","‡","☹","⒵","╯","高","ↆ","⛔","◎","ↂ","ℍ","⌛","X","⚡","→","ക","▛","♪","Ͳ","▓",
-    "∰","ɀ","⎳","R","ഉ","}","S","l","/","^","?","$","T","r","*","\\",'a','q','|','F','N','σ',"(","&",")",'ﾈ','2','1','9','6','4',"₪",'8','0',
-    "ɇ",'҉','⑫','Ѡ','⁈','‼','᎒','ꬩ','ᾮ','ͷ','@','¢','ހ','z','ӻ','Й','Ф','Ƶ','½','Ð','æ','¶','©','®','∎','Ꮂ','☢','ຣ','ﻊ','þ','Δ']
-    arr1.sort(() => (Math.random() > .5) ? 1 : -1);
+    let number = Math.random();
+    let array = [["Ѫ",'a'],["ઊ",'b'],["ﺾ",'c'],["Ж",'d'],["ӿ",'e'],["ວ",'f'],['ﬗ','g'],["≋",'h'],["╳",'i'],["◪",'j'],["‡",'k'],["☹",'l'],["⒵",'m'],["╯",'n'],["高",'o'],["ↆ",'p'],["⛔",'q'],["◎",'r'],["ↂ",'s'],["ℍ",'t'],["⌛",'u'],["X",'v'],["⚡",'w'],["→",'x'],["ക",'y'],["▛",'z'],["♪",'A'],["Ͳ",'B'],["▓",'C'],
+    ["∰",'D'],["ɀ",'E'],["⎳",'F'],["R",'G'],["ഉ",'H'],["}",'I'],["S",'J'],["l",'K'],["//",'L'],["^",'M'],["?",'N'],["$",'O'],["T",'P'],["r",'Q'],["*",'R'],['\\','S'],['a','T'],['q','U'],['|','V'],['F','W'],['N','X'],['σ','Y'],["(",'~'],["&",'Z'],[")",'1'],['ﾈ','2'],['2','3'],['1','4'],['9','5'],['6','6'],['4','7'],["₪",'8'],['8','9'],['0','0'],
+    ["ɇ",'!'],['҉','@'],['⑫','#'],['Ѡ','$'],['⁈','%'],['‼','^'],['᎒','&'],['ꬩ','*'],['ᾮ','('],['ͷ',')'],['@','-'],['¢','_'],['ހ','='],['z','+'],['ӻ','['],['Й',']'],['Ф','{'],['Ƶ','}'],['½','\\'],['Ð','|'],['æ',"'"],['¶','"'],['©',';'],['®',':'],['∎','//'],['Ꮂ','?'],['☢','.'],['ຣ','>'],['ﻊ',','],['þ','<'],['Δ','`']];
+
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(number * (i + 1));
+      [array[i][0], array[j][0]] = [array[j][0], array[i][0]];
+    }
+    
+    for(let i = 0, j = 0; i > disorder.length - 1, j > array.length - 1; i=i) {
+
+      if(disorder[i] == array[j][1]) {
+
+        disorder[i] = array[j][0];
+        i++
+
+      }else{
+
+        j++
+
+      } 
+    }console.log(disorder)
+
+    /*
     v1 += arr1[0]; v2 += arr1[1]; v3 += arr1[2]; v4 += arr1[3]; v5 += arr1[4]; v6 += arr1[5]; v7 += arr1[6]; v8 += arr1[7]; v9 += arr1[8]; v10 += arr1[9];
     v11 += arr1[10]; v12 += arr1[11]; v13 += arr1[12]; v14 += arr1[13]; v15 += arr1[14]; v16 += arr1[15]; v17 += arr1[16]; v18 += arr1[17]; v19 += arr1[18];
     v20 += arr1[19]; v21 += arr1[20]; v22 += arr1[21]; v23 += arr1[22]; v24 += arr1[23]; v25 += arr1[24]; v26 += arr1[25]; v27 += arr1[26]; v28 += arr1[27]; 
@@ -409,7 +360,15 @@ const encrypt = () => {
     v74 += arr1[74]; v75 += arr1[75]; v76 += arr1[76]; v77 += arr1[77]; v78 += arr1[78]; v79 += arr1[79]; v80 += arr1[80]; v81 += arr1[81]; v82 += arr1[82]; 
     v83 += arr1[83]; v84 += arr1[69]; v85 += arr1[84]; v86 += arr1[85]; v87 += arr1[86]; v88 += arr1[87]; v89 += arr1[88]; v90 += arr1[89]; v91 += arr1[90]; 
     v92 += arr1[91]; v93 += arr1[92];   
+    */
 
+    let testing = '';
+
+    for(let i = 0; i < disorder.length; i++) { //Loop that adds random character to testing from the arr1
+      testing += array[i][0]
+    }
+
+    /*
     for(let i = 0; i < disorder.length; i++) { //Loops through disorder and for each character, assigns the encrypted character to cipherText
       
       ((disorder[i] == ' ') ? cipherText += v1
@@ -462,14 +421,18 @@ const encrypt = () => {
         : cipherText += disorder[i]
       )
 
-      cipherText2 = cipherText //Assigns the global variable, cipherText2, the value of cipherText
 
     }
-      
-    document.getElementById("answer-box").innerHTML = cipherText; //Outputs the encrypted message to 'answer-box'
+
+    cipherText2 = cipherText //Assigns the global variable, cipherText2, the value of cipherText
+  */
+
+    cipherText2 = testing //Assigns the global variable, cipherText2, the value of testing
+
+    document.getElementById("answer-box").innerHTML = testing; //Outputs the encrypted message to 'answer-box'
     
   }
-  
+
 }
 
 // Text Decryption Function
@@ -488,7 +451,7 @@ function decrypt() {
     let reverseText = beginning.concat(middle).concat(end); //Restructures the message into its reversed form
     let plainText = reverseText.split("").reverse().join(""); //Turns the string into an array, reverses it, and returns it back to a string
 
-    document.getElementById("answer-box").innerHTML = plainText //Outputs the decrypted message to 'answer-box'
+    document.getElementById("answer-box").innerHTML = plainText; //Outputs the decrypted message to 'answer-box'
 
   } 
   
